@@ -5,6 +5,7 @@ node_modules/
 .editorconfig
 .git
 .gitignore
+.gitattributes
 .gitlab-ci.yml
 .travis.yml
 .DS_Store
