@@ -11,4 +11,4 @@ vendor/
 README_development.md
 .editorconfig
 boot_tests.sh
-deploy_plugin.sh
+copy2release.sh

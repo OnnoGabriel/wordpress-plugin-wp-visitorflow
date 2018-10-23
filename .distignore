@@ -36,4 +36,4 @@ README.md
 Readme.md
 README_development.md
 boot_tests.sh
-deploy_plugin.sh
+copy2release.sh
