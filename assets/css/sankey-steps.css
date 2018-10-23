@@ -1,0 +1,58 @@
+#flowbox {
+    width: 100%;
+}
+
+#chart {
+	margin: 10px 0px 0px 0px;
+	background-color: #fff;
+	box-shadow: 5px 5px 15px #aaa;
+}
+
+.node rect {
+  cursor: pointer;
+  fill-opacity: .9;
+  shape-rendering: crispEdges;
+}
+
+.node text {
+  font-size:13px;
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff;
+}
+
+.link {
+  fill: none;
+  stroke: #003300;
+  stroke-opacity: .15;
+}
+.link:hover {
+  stroke-opacity: .4;
+}
+
+.link_intern {
+  fill: none;
+  stroke: #003300;
+  stroke-opacity: .2;
+}
+.link_intern:hover {
+  stroke-opacity: .4;
+}
+
+.link_extern {
+  fill: none;
+  stroke: #330000;
+  stroke-opacity: .2;
+}
+.link_extern:hover {
+  stroke-opacity: .4;
+}
+
+.link_other {
+  fill: none;
+  stroke: #000033;
+  stroke-opacity: .2;
+}
+.link_other:hover {
+  stroke-opacity: .4;
+}
+

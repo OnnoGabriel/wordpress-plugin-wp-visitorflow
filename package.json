@@ -1,0 +1,12 @@
+{
+  "name": "wp-visitorflow",
+  "author": "Onno Gabriel",
+  "scripts": {
+    "test": "phpunit --color",
+    "test:watch": "watch 'npm run --silent test' .",
+    "test:coverage": "phpunit --color --coverage-html ../docs/wp-visitorflow"
+  },
+  "devDependencies": {
+    "watch": "^1.0.2"
+  }
+}
