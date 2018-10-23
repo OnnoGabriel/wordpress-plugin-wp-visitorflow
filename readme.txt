@@ -36,7 +36,7 @@ WP VisitorFlow has been developed with focus on website performance, usability a
 
 If you find any bug, have a question or need a new feature, please post a short comment at the [support forum](https://wordpress.org/support/plugin/wp-visitorflow). We will come back to you as soon as possible.
 
-Developers, please have also a look at the official [repo on GitHub](https://github.com/OnnoGeorg/wordpress-plugin).
+Developers, please have also a look at the official [repo on GitHub](https://github.com/OnnoGeorg/wordpress-plugin-wp-visitorflow).
 
 == Installation ==
 
