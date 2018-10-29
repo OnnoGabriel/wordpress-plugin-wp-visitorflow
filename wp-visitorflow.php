@@ -3,7 +3,7 @@
  * Plugin Name: WP VisitorFlow
  * Plugin URI: https://www.datacodedesign.de/index.php/wp-visitorflow/
  * Description: Detailed web analytics and visualization of your website's visitor flow
- * Version: 1.5.1
+ * Version: 1.5.2
  * Author: Onno Gabriel, DataCodeDesign
  * Author URI: http://www.onno-gabriel.de
  * License: GPL2
