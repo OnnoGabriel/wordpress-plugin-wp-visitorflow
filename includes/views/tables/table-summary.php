@@ -69,7 +69,7 @@
 		if ($minutes_run > 60*$counter['hours']) { // if db (re)start was later than the hour interval
 			$compare = $db_info[ $counter['db_info_compare'] ];
 
-			if ($compare >= 0) {
+			if ($compare > 0) {
 				$arrow = '0';
 				$change = 100 * ($count - $compare) / $compare;
 				$changes = array(5, 10, 20, 50, 100, 200);

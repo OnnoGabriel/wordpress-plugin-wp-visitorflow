@@ -93,7 +93,10 @@ WP VisitorFlow stores the statistics data in two different ways: the "flow data"
 5. Android app available: see a summary of website visits for one or more WordPress installations on your Android mobile phone or tablet.
 
 == Changelog ==
-= 1.5 =
+= 1.5.2 =
+* Some minor bugfixes
+
+= 1.5.1 =
 * Visitor flow tracking by additional client site JavaScript HTTP requests; fallback solution for websites with certain caching plugins.
 * Restructuring of settings pages; documentation of options added.
 * Plugin's core functions rewritten.
@@ -165,7 +168,10 @@ WP VisitorFlow stores the statistics data in two different ways: the "flow data"
 * First published version.
 
 == Upgrade Notice ==
-= 1.5 =
+= 1.5.2 =
+Some minor bugfixes
+
+= 1.5.1 =
 Visitor flow tracking by additional client site JavaScript HTTP requests; fallback solution for websites with certain caching plugins.
 
 = 1.4 =
