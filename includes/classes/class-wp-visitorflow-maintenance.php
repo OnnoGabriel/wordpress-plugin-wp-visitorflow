@@ -81,7 +81,7 @@ class WP_VisitorFlow_Maintenance
 	 * @var string $date
 	 * @return boolean
 	 **/
-	public function aggregateDataPerDay( $date = false ) {
+	public static function aggregateDataPerDay( $date = false ) {
 		if ( ! $date ) { return false; }
 
 		// Get data for date $date

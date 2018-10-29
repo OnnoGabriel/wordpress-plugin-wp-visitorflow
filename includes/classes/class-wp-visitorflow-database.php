@@ -288,7 +288,7 @@ class WP_VisitorFlow_Database
 	 * @var string $date
 	 * @return boolean
 	 **/
-	public function getData( $date = false ) {
+	public static function getData( $date = false ) {
 		// No $date? Use today
 		if (! $date) {
 			$date = $this->datetime->format('Y-m-d');

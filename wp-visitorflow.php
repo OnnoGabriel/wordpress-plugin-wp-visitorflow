@@ -4,7 +4,7 @@
  * Plugin URI: https://www.datacodedesign.de/index.php/wp-visitorflow/
  * Description: Detailed web analytics and visualization of your website's visitor flow
  * Version: 1.5.1
- * Author: Onno Gabriel/DataCodeDesign
+ * Author: Onno Gabriel, DataCodeDesign
  * Author URI: http://www.onno-gabriel.de
  * License: GPL2
  * Text Domain: wp-visitorflow
@@ -119,6 +119,18 @@ if ( $wpvf_version != WP_VISITORFLOW_VERSION ) {
 
 // On admin panel
 if ( is_admin() ) {
+
+	// Translations
+	function wp_visitorflow_internationalization()
+	{
+		$res = load_plugin_textdomain(
+			'wp-visitorflow',
+			false,
+			dirname( plugin_basename( __FILE__ ) ) . '/languages/'
+		);
+	}
+	add_action( 'init', 'wp_visitorflow_internationalization' );
+
 
 	// Check if update finished correctly
 	if ( get_option('wp_visitorflow_plugin_version') != WP_VISITORFLOW_VERSION ) {

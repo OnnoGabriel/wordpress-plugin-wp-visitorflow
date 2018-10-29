@@ -39,9 +39,6 @@ class WP_VisitorFlow_Admin
 			// Add plugin settings link to plugins list
 			add_filter( 'plugin_action_links', array('WP_VisitorFlow_Admin', 'addSettingsLink'), 10, 2);
 
-			// Translations
-			add_action( 'init', array('WP_VisitorFlow_Admin', 'internationalization') );
-
 			// Add hook to posts table
 			add_filter( 'manage_posts_columns' , array('WP_VisitorFlow_Admin', 'postsAddWpVisitorColumn') );
 			add_action( 'manage_posts_custom_column' , array('WP_VisitorFlow_Admin', 'postsWpVisitorColumn', 10, 2 ) );
@@ -114,20 +111,6 @@ class WP_VisitorFlow_Admin
 	}
 
 
-
-	/**
-	 * Load Textdomain
-	 */
-	public static function internationalization()
-	{
-		$res = load_plugin_textdomain(
-			'wp-visitorflow',
-			false,
-			dirname( plugin_basename( __FILE__ ) ) . '/../../languages/'
-		);
-	}
-
-
 	/**
 	 * Add plugin's settings to plugins list
 	 */
@@ -175,7 +158,7 @@ class WP_VisitorFlow_Admin
 	/**
 	 * Get time difference in words
 	 **/
-	function getNiceTimeDifference( $datetime1, $datetime2 ) {
+	public static function getNiceTimeDifference( $datetime1, $datetime2 ) {
 		$date1 = new DateTime($datetime1);
 		$date2 = new DateTime($datetime2);
 
