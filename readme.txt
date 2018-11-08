@@ -3,6 +3,7 @@ Contributors: friese
 Donate link: https://www.datacodedesign.de/index.php/wp-visitorflow-donate/
 Tags: statistics, analytics, web analytics, stats, visits, visitors, page, page view, pageviews, page hit, visitor flow, pagerank, bounce, bounce rate, exit page, web stats
 Requires at least: 3.5
+Requires PHP: 5.4
 Tested up to:  4.9.8
 Stable tag: 1.5.2
 License: GPLv2 or later
@@ -93,6 +94,9 @@ WP VisitorFlow stores the statistics data in two different ways: the "flow data"
 5. Android app available: see a summary of website visits for one or more WordPress installations on your Android mobile phone or tablet.
 
 == Changelog ==
+= 1.5.3 =
+* Bugfix: PHP 5.4 requirement
+
 = 1.5.2 =
 * Some minor bugfixes
 
