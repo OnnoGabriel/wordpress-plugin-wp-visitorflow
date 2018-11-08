@@ -17,7 +17,7 @@ class WP_VisitorFlow_Database
 	private static $config = 0;
 
 	private static $db;						// WordPress database object
-	private static $table_name = [];			// Hash array with db table names
+	private static $table_name = array();	// Hash array with db table names
 
 	/**
 	 * Init

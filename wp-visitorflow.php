@@ -35,7 +35,7 @@ defined( 'ABSPATH' ) || exit;
 
 // Global constants
 define( 'WP_VISITORFLOW_VERSION', '1.5.1' );
-define( 'WP_VISITORFLOW_REQUIRED_PHP_VERSION', '5.3.0' );
+define( 'WP_VISITORFLOW_REQUIRED_PHP_VERSION', '5.4.0' );
 define( 'WP_VISITORFLOW_PLUGIN_PATH', trailingslashit( dirname(  __FILE__ ) ) );
 define( 'WP_VISITORFLOW_PLUGIN_URL', trailingslashit( plugins_url(  'wp-visitorflow' ) ) );
 

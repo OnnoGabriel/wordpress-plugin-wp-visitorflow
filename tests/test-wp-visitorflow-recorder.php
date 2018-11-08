@@ -11,7 +11,7 @@
 class WP_VisitorFlow_Recorder_Test extends WP_UnitTestCase {
 
 	private $config;
-	private $post_id = [];
+	private $post_id = array();
 
 	public function setUp()
     {

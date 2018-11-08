@@ -15,8 +15,8 @@ class WP_VisitorFlow_Config
 {
 	private static $instance = NULL;
 
-	protected $settings = []; 			// Plugin's general options/settings
-	protected $user_settings = [];      // User's options/settings
+	protected $settings = array(); 		// Plugin's general options/settings
+	protected $user_settings = array(); // User's options/settings
 	protected $user_id = 0;				// ID of current Wordpress user
 	protected $datetime = 0;	  		// current date and time
 
