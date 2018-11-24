@@ -65,7 +65,7 @@ class WP_VisitorFlow_Recorder
 
 		// 404 error page?
 		if( is_404() ) {
-			if ( self::get_setting('exclude_404') ) {
+			if ( self::$config->getSetting('exclude_404') ) {
 				WP_VisitorFlow_Database::increaseMeta('count exclusion', '404');
 				return false;
 			}
