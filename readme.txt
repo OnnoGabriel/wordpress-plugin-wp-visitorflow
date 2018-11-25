@@ -5,7 +5,7 @@ Tags: statistics, analytics, web analytics, stats, visits, visitors, page, page 
 Requires at least: 3.5
 Requires PHP: 5.4
 Tested up to:  4.9.8
-Stable tag: 1.5.3
+Stable tag: 1.5.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -94,6 +94,9 @@ WP VisitorFlow stores the statistics data in two different ways: the "flow data"
 5. Android app available: see a summary of website visits for one or more WordPress installations on your Android mobile phone or tablet.
 
 == Changelog ==
+= 1.5.4 =
+* Bugfix 404 pages
+
 = 1.5.3 =
 * Bugfix: PHP 5.4 requirement
 
@@ -172,6 +175,9 @@ WP VisitorFlow stores the statistics data in two different ways: the "flow data"
 * First published version.
 
 == Upgrade Notice ==
+= 1.5.4 =
+* Bugfix 404 pages
+
 = 1.5.2 =
 Some minor bugfixes
 
