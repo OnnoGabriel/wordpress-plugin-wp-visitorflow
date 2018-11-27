@@ -41,11 +41,11 @@ class WP_VisitorFlow_Admin
 
 			// Add hook to posts table
 			add_filter( 'manage_posts_columns' , array('WP_VisitorFlow_Admin', 'postsAddWpVisitorColumn') );
-			add_action( 'manage_posts_custom_column' , array('WP_VisitorFlow_Admin', 'postsWpVisitorColumn', 10, 2 ) );
+			add_action( 'manage_posts_custom_column' , array('WP_VisitorFlow_Admin', 'postsWpVisitorColumn'), 10, 2 );
 
 			// Add hook to pages table
 			add_filter( 'manage_pages_columns', array('WP_VisitorFlow_Admin', 'pagesAddWpVisitorColumn' ) );
-			add_action( 'manage_pages_custom_column' , array('WP_VisitorFlow_Admin', 'pagesWpVisitorColumn', 10, 2 ) );
+			add_action( 'manage_pages_custom_column' , array('WP_VisitorFlow_Admin', 'pagesWpVisitorColumn'), 10, 2 );
 
 		}
 
