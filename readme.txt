@@ -94,6 +94,9 @@ WP VisitorFlow stores the statistics data in two different ways: the "flow data"
 5. Android app available: see a summary of website visits for one or more WordPress installations on your Android mobile phone or tablet.
 
 == Changelog ==
+= 1.5.5 =
+* WordPress 5.0 ready, Bugfix Link on pages and posts list
+
 = 1.5.4 =
 * Bugfix 404 pages
 
@@ -175,6 +178,9 @@ WP VisitorFlow stores the statistics data in two different ways: the "flow data"
 * First published version.
 
 == Upgrade Notice ==
+= 1.5.5 =
+* WordPress 5.0 ready, Bugfix Link on pages and posts list
+
 = 1.5.4 =
 * Bugfix 404 pages
 
