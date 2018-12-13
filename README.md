@@ -16,8 +16,8 @@ For installation in production environments, please refer to the instructions on
 
 * Install WP-Tests environment:
 
-  `./bin/install-wp-tests.sh TEST_DB_NAME DB_ACCOUNT "DB_PASSWORD" localhost latest
-npm run test:watch`
+  `./bin/install-wp-tests.sh TEST_DB_NAME DB_ACCOUNT "DB_PASSWORD" localhost latest`
+
 * Run `npm run test` to run the tests – or `npm run test:watch` for additional watching for file changes.
 
 
