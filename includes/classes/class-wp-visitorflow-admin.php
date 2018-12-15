@@ -69,8 +69,8 @@ class WP_VisitorFlow_Admin
 			__('VisitorFlow', 'wp-visitorflow'),
 			$reader_cap,
 			'wpvf_menu',
-			'__return_true', '
-			dashicons-randomize'
+			'__return_true',
+			'dashicons-randomize'
 		);
 
 		$thisPage = new WP_VisitorFlow_Admin_Page_Metabox(

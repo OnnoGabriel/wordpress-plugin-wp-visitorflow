@@ -49,15 +49,16 @@ if ( ! version_compare( phpversion(), WP_VISITORFLOW_REQUIRED_PHP_VERSION, ">=" 
 	// Warning message in admin area
 	if ( is_admin() ) {
 		function wp_visitorflow_php_notice() {
-			?>
-			<div class="error below-h2"><p>
-				<?php printf(
-					__('The WP VisitorFlow plugin requires at least PHP version %s, but installed is version %s.'),
+			$class = 'notice notice-error';
+			$message = __(
+				sprintf(
+					'The WP VisitorFlow plugin requires at least PHP version %s, but installed is version %s.',
 					WP_VISITORFLOW_REQUIRED_PHP_VERSION,
 					PHP_VERSION
-				); ?>
-			</p></div>
-			<?php
+				),
+				'wp-visitorflow'
+			);
+			printf( '<div class="%1$s"><p>%2$s</p></div>', esc_attr( $class ), esc_html( $message ) );
 		}
 		add_action('admin_notices', 'wp_visitorflow_php_notice');
 	}
@@ -136,11 +137,9 @@ if ( is_admin() ) {
 	if ( get_option('wp_visitorflow_plugin_version') != WP_VISITORFLOW_VERSION ) {
 		// Warning message inside the dashboard
 		function wp_visitorflow_error_notice() {
-			?>
-			<div class="error below-h2"><p>
-				<?php echo __('An error occured during installation/update of the WP VisitorFlow plugin.'); ?>
-			</p></div>
-			<?php
+			$class = 'notice notice-error';
+			$message = __('An error occurred during installation/update of the WP VisitorFlow plugin.', 'wp-visitorflow');
+			printf( '<div class="%1$s"><p>%2$s</p></div>', esc_attr( $class ), esc_html( $message ) );
 		}
 		add_action('admin_notices', 'wp_visitorflow_error_notice');
 		return;
