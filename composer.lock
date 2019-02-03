@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6c7669bac5bdff031a0b3f6f8fc4d59e",
-    "content-hash": "39d1bc3714f14cb84ca83b5daac2ed24",
+    "hash": "6d97235a26111535b689d9ab0548e7bb",
+    "content-hash": "32c7f22dff767f2d11f316ef459877fb",
     "packages": [
         {
             "name": "doctrine/cache",
-            "version": "v1.6.1",
+            "version": "v1.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "b6f544a20f4807e81f7044d31e679ccbb1866dc3"
+                "reference": "eb152c5100571c7a45470ff2a35095ab3f3b900b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/b6f544a20f4807e81f7044d31e679ccbb1866dc3",
-                "reference": "b6f544a20f4807e81f7044d31e679ccbb1866dc3",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/eb152c5100571c7a45470ff2a35095ab3f3b900b",
+                "reference": "eb152c5100571c7a45470ff2a35095ab3f3b900b",
                 "shasum": ""
             },
             "require": {
@@ -75,7 +75,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2016-10-29 11:16:17"
+            "time": "2017-07-22 12:49:21"
         },
         {
             "name": "endroid/qrcode",
@@ -190,16 +190,16 @@
         },
         {
             "name": "piwik/device-detector",
-            "version": "3.11.2",
+            "version": "3.11.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/matomo-org/device-detector.git",
-                "reference": "c8e1760a45c4aed201af3b7deee35131bc47fe3e"
+                "reference": "c136bf9147bd8f33746b1915331fba133d076ed5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/matomo-org/device-detector/zipball/c8e1760a45c4aed201af3b7deee35131bc47fe3e",
-                "reference": "c8e1760a45c4aed201af3b7deee35131bc47fe3e",
+                "url": "https://api.github.com/repos/matomo-org/device-detector/zipball/c136bf9147bd8f33746b1915331fba133d076ed5",
+                "reference": "c136bf9147bd8f33746b1915331fba133d076ed5",
                 "shasum": ""
             },
             "require": {
@@ -214,7 +214,8 @@
                 "psr/simple-cache": "^1.0"
             },
             "suggest": {
-                "doctrine/cache": "Can directly be used for caching purpose"
+                "doctrine/cache": "Can directly be used for caching purpose",
+                "ext-yaml": "Necessary for using the Pecl YAML parser"
             },
             "type": "library",
             "autoload": {
@@ -240,20 +241,20 @@
                 "parser",
                 "useragent"
             ],
-            "time": "2018-10-08 20:45:21"
+            "time": "2018-12-26 22:52:19"
         },
         {
             "name": "symfony/options-resolver",
-            "version": "v3.4.17",
+            "version": "v3.4.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/options-resolver.git",
-                "reference": "1cf7d8e704a9cc4164c92e430f2dfa3e6983661d"
+                "reference": "8a10e36ffd04c0c551051594952304d34ecece71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/1cf7d8e704a9cc4164c92e430f2dfa3e6983661d",
-                "reference": "1cf7d8e704a9cc4164c92e430f2dfa3e6983661d",
+                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/8a10e36ffd04c0c551051594952304d34ecece71",
+                "reference": "8a10e36ffd04c0c551051594952304d34ecece71",
                 "shasum": ""
             },
             "require": {
@@ -294,7 +295,7 @@
                 "configuration",
                 "options"
             ],
-            "time": "2018-09-17 17:29:18"
+            "time": "2019-01-01 13:45:19"
         }
     ],
     "packages-dev": [],

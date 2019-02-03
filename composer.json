@@ -1,7 +1,7 @@
 {
   "require": {
-    "piwik/device-detector": "3.11.2",
-    "doctrine/cache": "1.6.1",
+    "piwik/device-detector": "3.11.4",
+    "doctrine/cache": "1.6.2",
     "endroid/qrcode": "1.9.3"
   }
 }
