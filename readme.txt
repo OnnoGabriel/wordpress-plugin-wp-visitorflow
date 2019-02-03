@@ -5,7 +5,7 @@ Tags: statistics, analytics, web analytics, stats, visits, visitors, page, page 
 Requires at least: 3.5
 Requires PHP: 5.5
 Tested up to:  5.0
-Stable tag: 1.5.5
+Stable tag: 1.5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
