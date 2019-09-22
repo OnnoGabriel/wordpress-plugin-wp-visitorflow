@@ -413,10 +413,6 @@
 							</p>
 							<br>
 
-							<h3><?php echo __('Database Summary', 'wp-visitorflow'); ?></h3>
-<?php
-							WP_VisitorFlow_Admin_Tables::dbInfoTable();
-?>
 							<br>
 							<p style="text-align:right;">
 								 WP VisitorFlow v<?php echo WP_VISITORFLOW_VERSION; ?>
@@ -427,8 +423,15 @@
 					</tbody>
 					</table>
 
-
 				</div>
+				<br />
+				<br />
+
+				<h3><?php echo __('Database Summary', 'wp-visitorflow'); ?></h3>
+<?php
+				WP_VisitorFlow_Admin_Tables::dbInfoTable();
+?>
+
 
 			</div>
 
