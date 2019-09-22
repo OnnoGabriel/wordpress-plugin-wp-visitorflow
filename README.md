@@ -1,6 +1,10 @@
 ## Description
 
-Official repository for the WP VisitorFlow plugin for WordPress.
+Official repository of the WP VisitorFlow plugin for WordPress.
+
+WP VisitorFlow provides detailed information about visitors to your website. With WP VisitorFlow you can see at a glance how visitors interact with your WordPress website: All paths taken by your visitors are summarized in a comprehensive flowchart:
+
+![alt text](https://ps.w.org/wp-visitorflow/assets/screenshot-1.png?rev=1656985)
 
 ## Installation
 
