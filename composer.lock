@@ -4,8 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6d97235a26111535b689d9ab0548e7bb",
-    "content-hash": "32c7f22dff767f2d11f316ef459877fb",
+    "content-hash": "6079a262e3048cb772c90584faaecdb5",
     "packages": [
         {
             "name": "doctrine/cache",
@@ -75,10 +74,10 @@
                 "cache",
                 "caching"
             ],
-            "time": "2017-07-22 12:49:21"
+            "time": "2017-07-22T12:49:21+00:00"
         },
         {
-            "name": "endroid/qrcode",
+            "name": "endroid/qr-code",
             "version": "1.9.3",
             "source": {
                 "type": "git",
@@ -135,8 +134,7 @@
                 "qrcode",
                 "symfony"
             ],
-            "abandoned": "endroid/qr-code",
-            "time": "2017-04-08 09:13:59"
+            "time": "2017-04-08T09:13:59+00:00"
         },
         {
             "name": "mustangostang/spyc",
@@ -186,25 +184,25 @@
                 "yaml",
                 "yml"
             ],
-            "time": "2017-02-24 16:06:33"
+            "time": "2017-02-24T16:06:33+00:00"
         },
         {
             "name": "piwik/device-detector",
-            "version": "3.11.4",
+            "version": "3.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/matomo-org/device-detector.git",
-                "reference": "c136bf9147bd8f33746b1915331fba133d076ed5"
+                "reference": "a698de2c57d8e106b8f8e54671b4bf794dc9698e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/matomo-org/device-detector/zipball/c136bf9147bd8f33746b1915331fba133d076ed5",
-                "reference": "c136bf9147bd8f33746b1915331fba133d076ed5",
+                "url": "https://api.github.com/repos/matomo-org/device-detector/zipball/a698de2c57d8e106b8f8e54671b4bf794dc9698e",
+                "reference": "a698de2c57d8e106b8f8e54671b4bf794dc9698e",
                 "shasum": ""
             },
             "require": {
                 "mustangostang/spyc": "*",
-                "php": ">=5.3.2"
+                "php": ">=5.5"
             },
             "require-dev": {
                 "fabpot/php-cs-fixer": "~1.7",
@@ -241,20 +239,20 @@
                 "parser",
                 "useragent"
             ],
-            "time": "2018-12-26 22:52:19"
+            "time": "2019-07-22T14:35:14+00:00"
         },
         {
             "name": "symfony/options-resolver",
-            "version": "v3.4.21",
+            "version": "v3.4.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/options-resolver.git",
-                "reference": "8a10e36ffd04c0c551051594952304d34ecece71"
+                "reference": "a7c00586a9ef70acf0f17085e51c399bf9620e03"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/8a10e36ffd04c0c551051594952304d34ecece71",
-                "reference": "8a10e36ffd04c0c551051594952304d34ecece71",
+                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/a7c00586a9ef70acf0f17085e51c399bf9620e03",
+                "reference": "a7c00586a9ef70acf0f17085e51c399bf9620e03",
                 "shasum": ""
             },
             "require": {
@@ -295,7 +293,7 @@
                 "configuration",
                 "options"
             ],
-            "time": "2019-01-01 13:45:19"
+            "time": "2019-08-03T21:15:25+00:00"
         }
     ],
     "packages-dev": [],
