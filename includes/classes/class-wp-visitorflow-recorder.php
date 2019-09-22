@@ -36,7 +36,7 @@ class WP_VisitorFlow_Recorder
 	 **/
 	public static function recordVisit() {
 
-		// Check frontend JS call?
+		// Check: frontend JS calls activated?
 		parse_str( parse_url( $_SERVER['REQUEST_URI'], PHP_URL_QUERY ), $queries );
 		if ( self::$config->getSetting('use_frontend_js') && ! array_key_exists( 'wpvf_page', $queries ) ) {
 			return false;
@@ -177,7 +177,7 @@ class WP_VisitorFlow_Recorder
 		 * All checks done: Save visitor, page and flow to database
 		 **************************************************************************************/
 
-		// New Visitor => store visit, referrer and visited page
+		 // New Visitor => store visit, referrer and visited page
 		if ($new_visitor) {
 
 			// Get visited page info
@@ -217,13 +217,12 @@ class WP_VisitorFlow_Recorder
 				if (array_key_exists('HTTP_REFERER', $_SERVER) ) {
 					WP_VisitorFlow_Database::storeSEKeywords( $_SERVER['HTTP_REFERER'], $referer_page_id, $page_id );
 				}
-			}
 
-			// Store HTTP User-Agent String (optional):
-			if ( self::$config->getSetting('store_useragent')) {
-				WP_VisitorFlow_Database::storeMeta('useragent', $visit_id, $ua_string );
+				// Store HTTP User-Agent String (optional):
+				if ( self::$config->getSetting('store_useragent')) {
+					WP_VisitorFlow_Database::storeMeta('useragent', $visit_id, $ua_string );
+				}
 			}
-
 		}
 
 		// Old Visitor => update visit and store visited page
