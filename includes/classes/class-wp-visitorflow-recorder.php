@@ -183,6 +183,12 @@ class WP_VisitorFlow_Recorder
 			// Get visited page info
 			$page_info = self::getPageInfo();
 
+
+			ob_start();
+			var_dump($page_info);
+			error_log($result = ob_get_clean());
+
+
 			if ($page_info['internal'] == 1) {
 
 				// Store Visitor
@@ -213,7 +219,7 @@ class WP_VisitorFlow_Recorder
 				$page_id = WP_VisitorFlow_Database::storePage( $page_info['internal'], $page_info['title'], $page_info['post_id'] );
 				$flow_id = WP_VisitorFlow_Database::storeFlow( $visit_id, $page_id );
 
-				// Store search enginge keywords (if any exists)
+				// Store search engine keywords (if any exists)
 				if (array_key_exists('HTTP_REFERER', $_SERVER) ) {
 					WP_VisitorFlow_Database::storeSEKeywords( $_SERVER['HTTP_REFERER'], $referer_page_id, $page_id );
 				}
@@ -341,12 +347,12 @@ class WP_VisitorFlow_Recorder
 	/**
      * Get page details from WordPress API
 	 *
-	 * @return array['internal' => 1,
-     *				 'post_id'  => -1 		: error, internal post/page could not be found
-	 *							   0 		: if not a WP post or page
-	 *							   post_id 	: if a WP post or page
-	 *				 'title'    => post/page title
-	 *                             or the page URI ]
+	 * @return array['internal' =>  1,	: internal page
+     *				 			   -1	: error, internal post/page could not be found
+	 *							    0 	: if not a WP post or page
+	 *				 'post_id'  =>  the post ID (if a WP post or page)
+	 *				 'title'    =>  post/page title
+	 *                              or the page URI ]
 	 */
 	private static function getPageInfo() {
 		$page_info = [
@@ -405,7 +411,12 @@ class WP_VisitorFlow_Recorder
 			$page_uri .= $_SERVER['REQUEST_URI'];
 
 			// Internal WP post or page?
-			$page_info['internal'] = ( is_single() or is_page() ) ? 1 : 0;
+			$page_info['internal'] = (
+				is_single() ||
+				is_page() ||
+				is_home() ||
+				is_front_page()
+			) ? 1 : 0;
 
 			// We are on an internal WP post or page
 			if ( $page_info['internal'] ) {
