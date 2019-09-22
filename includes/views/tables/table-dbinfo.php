@@ -12,7 +12,7 @@
 		<th><?php echo __('Value', 'wp-visitorflow'); ?></th>
 	</tr>
 	<tr class="darker">
-		<td><?php echo __('Database start date', 'wp-visitorflow'); ?></td>
+		<td><?php echo __('Date of first record', 'wp-visitorflow'); ?></td>
 		<td class="right">
 			<strong><?php echo date_i18n(
 				get_option( 'date_format' ),
@@ -30,7 +30,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td><?php echo __('Flow data start date', 'wp-visitorflow'); ?></td>
+		<td><?php echo __('Date pf first flow data', 'wp-visitorflow'); ?></td>
 		<td class="right">
 			<strong><?php echo date_i18n(
 				get_option( 'date_format' ),
@@ -65,7 +65,7 @@
 	</tr>
 	<tr class="darker">
 		<td>
-			<?php echo __('Recorded bots visits', 'wp-visitorflow'); ?>
+			<?php echo __('Recorded bot visits', 'wp-visitorflow'); ?>
 		</td>
 		<td class="right">
 			<strong><?php echo number_format_i18n($db_info['bots_count']); ?></strong><br>

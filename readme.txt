@@ -80,8 +80,8 @@ If no page view on your website is recorded by WP VisitorFlow please check the f
 = How to exclude 404 error pages? =
 By default also 404 error pages are recorded by WP VisitorFlow. You can exclude 404 pages from the recording in the settings section under VisitorFlow/Settings/Storage.
 
-= What is the difference between "database start date"	and "flow data start date" in the summary? =
-WP VisitorFlow stores the statistics data in two different ways: the "flow data" is very detailed because it contains information about the used web browsers, date and time of each visited page etc. Therefore, this flow data is stored only for a limited amount of time (typically 365 days; can be set under VisitorFlow/Settings/Storage). Older data is automatically deleted to keep the data base lean. Next to this, the flow data is automatically aggregated on a daily basis, which means that the total number of page views per post/page and the total number of referrer webpages are stored per day. This data is much smaller and is stored for an unlimited amount of time.
+= What is the difference between "date of first record" and "date of first flow data" in the summary? =
+WP VisitorFlow stores the statistics data in two different ways: the "flow data" is very detailed because it contains information about the used web browsers, date and time of each visited page etc. Therefore, this flow data is stored only for a limited amount of time (can be set under VisitorFlow/Settings/Storage). Older data is automatically is automatically aggregated on a daily basis, and only the total number of page views per post/page and the total number of referrer webpages are stored per day. This data is much smaller and is stored for an unlimited amount of time.
 
 
 

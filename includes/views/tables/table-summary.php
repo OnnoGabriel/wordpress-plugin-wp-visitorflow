@@ -102,7 +102,7 @@
 		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-3" style="padding:0;">
 			<div class="wpvf_info wpvf_info_green<?php echo $info_box_class; ?>">
 				<span class="<?php echo $title_class; ?>"><?php echo  str_replace(" ", "&nbsp;", WP_VisitorFlow_Admin::getNiceTimeDifference( self::$config->getSetting('db-startdatetime'), self::$config->getDatetime() ) ); ?></span><br>
-				<?php echo __('since DB start on', 'wp_visitorflow'); ?><br>
+				<?php echo __('since the first record on', 'wp_visitorflow'); ?><br>
 				<?php echo date_i18n( get_option( 'date_format' ), strtotime(self::$config->getSetting('db-startdatetime'))); ?>
 			</div>
 		</div>

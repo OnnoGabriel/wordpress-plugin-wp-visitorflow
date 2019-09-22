@@ -40,7 +40,7 @@ class WP_VisitorFlow_Admin_Overview
 			echo '<br>';
 			echo '<span style="font-weight:normal">' . __('This is probably due to a fresh installation.', 'wp-visitorflow') . '</span><br>';
 			echo '<br>';
-			echo '<span style="font-weight:normal">' . __('Please note that by default no visitor data is stored originating from admin pages or from administrators visiting your website. You can change this settings in the <a class="wpvf" href="?page=wpvf_admin_settings&tab=storing">settings section</a>.', 'wp-visitorflow') . '</span><br>';
+			echo '<span style="font-weight:normal">' . __('By default, no visits are recorded originating from admin pages or from administrators visiting your website. You can change this settings in the <a class="wpvf" href="?page=wpvf_admin_settings&tab=storing">settings section</a>.', 'wp-visitorflow') . '</span><br>';
 			?>
 		</div><br>
 		<br><br>
