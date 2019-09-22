@@ -78,7 +78,7 @@ class WP_VisitorFlow_Config
 			'encrypt_ips' => true,
 			'store_useragent' => false,
 			'minimum_time_between' => 60,
-			'flowdata_storage_time' => 365,
+			'flowdata_storage_time' => 60,
 			'exclude_unknown_useragents' => true,
 			'exclude_bots' => true,
 			'exclude_404' => false,
