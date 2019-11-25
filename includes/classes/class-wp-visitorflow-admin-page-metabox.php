@@ -60,7 +60,14 @@ class WP_VisitorFlow_Admin_Page_Metabox extends WP_VisitorFlow_Admin_Page
 	function add_page(){
 
 		/* Add the screen */
-		$this->screen = add_submenu_page($this->hook,$this->page_title, $this->menu_title, $this->min_capability,$this->slug,  array($this,'render_page'),10);
+		$this->screen = add_submenu_page(
+			$this->hook,
+			$this->page_title,
+			$this->menu_title,
+			$this->min_capability,
+			$this->slug,
+			array($this,'render_page')
+		);
 
 		/* Add callbacks for this screen only */
 		add_action('load-'.$this->screen, $this->metabox_cb);

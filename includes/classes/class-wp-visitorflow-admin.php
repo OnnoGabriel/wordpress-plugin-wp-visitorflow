@@ -84,10 +84,42 @@ class WP_VisitorFlow_Admin
 			array('WP_VisitorFlow_Admin_Overview', 'overviewHeader')
 		);
 
-		add_submenu_page('wpvf_menu', 'WP VisitorFlow &ndash; ' . __('Full Website Analytics', 'wp-visitorflow'), 	__('Full Website', 'wp-visitorflow'), 	$reader_cap,  'wpvf_mode_website',		array('WP_VisitorFlow_Admin_Website', 'main') );
-		add_submenu_page('wpvf_menu', 'WP VisitorFlow &ndash; ' . __('Single Page Analytics', 'wp-visitorflow'), 	__('Single Page', 'wp-visitorflow'), 	$reader_cap,  'wpvf_mode_singlepage',	array('WP_VisitorFlow_Admin_Single', 'main') );
-		add_submenu_page('wpvf_menu', 'WP VisitorFlow &ndash; ' . __('Data Export', 'wp-visitorflow'), 				__('Data Export', 'wp-visitorflow'),   	$admin_cap,   'wpvf_admin_export',	    array('WP_VisitorFlow_Admin_Export', 'main') );
-		add_submenu_page('wpvf_menu', 'WP VisitorFlow &ndash; ' . __('Settings', 'wp-visitorflow'), 				__('Settings', 'wp-visitorflow'), 	   	$admin_cap,   'wpvf_admin_settings',	array('WP_VisitorFlow_Admin_Settings', 'main')) ;
+		add_submenu_page(
+			'wpvf_menu',
+			'WP VisitorFlow &ndash; ' . __('Full Website Analytics', 'wp-visitorflow'),
+			__('Full Website', 'wp-visitorflow'),
+			$reader_cap,
+			'wpvf_mode_website',
+			array('WP_VisitorFlow_Admin_Website', 'main'),
+			1
+		);
+		add_submenu_page(
+			'wpvf_menu',
+			'WP VisitorFlow &ndash; ' . __('Single Page Analytics', 'wp-visitorflow'),
+			__('Single Page', 'wp-visitorflow'),
+			$reader_cap,
+			'wpvf_mode_singlepage',
+			array('WP_VisitorFlow_Admin_Single', 'main'),
+			2
+		);
+		add_submenu_page(
+			'wpvf_menu',
+			'WP VisitorFlow &ndash; ' . __('Data Export', 'wp-visitorflow'),
+			__('Data Export', 'wp-visitorflow'),
+			$admin_cap,
+			'wpvf_admin_export',
+			array('WP_VisitorFlow_Admin_Export', 'main'),
+			3
+		);
+		add_submenu_page(
+			'wpvf_menu',
+			'WP VisitorFlow &ndash; ' . __('Settings', 'wp-visitorflow'),
+			__('Settings', 'wp-visitorflow'),
+			$admin_cap,
+			'wpvf_admin_settings',
+			array('WP_VisitorFlow_Admin_Settings', 'main'),
+			4
+		);
 
 		// Enqueue css file
 		wp_enqueue_style('wpvf', WP_VISITORFLOW_PLUGIN_URL  . 'assets/css/wp_visitorflow.min.css');
