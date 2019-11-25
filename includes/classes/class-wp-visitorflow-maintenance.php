@@ -188,10 +188,10 @@ class WP_VisitorFlow_Maintenance
 		self::$config->setSetting('last_dbclean_date', date("Y-m-d"), 1);
 
 		// Optimize database tables
-		$db->query("OPTIMIZE TABLE $flow_table");
-		$db->query("OPTIMIZE TABLE $pages_table");
-		$db->query("OPTIMIZE TABLE $visits_table");
-		$db->query("OPTIMIZE TABLE $meta_table");
+		// $db->query("OPTIMIZE TABLE $flow_table");
+		// $db->query("OPTIMIZE TABLE $pages_table");
+		// $db->query("OPTIMIZE TABLE $visits_table");
+		// $db->query("OPTIMIZE TABLE $meta_table");
 
 		return $message;
 	}
