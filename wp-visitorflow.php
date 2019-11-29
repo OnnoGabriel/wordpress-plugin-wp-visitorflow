@@ -39,11 +39,6 @@ define( 'WP_VISITORFLOW_REQUIRED_PHP_VERSION', '5.4.0' );
 define( 'WP_VISITORFLOW_PLUGIN_PATH', trailingslashit( dirname(  __FILE__ ) ) );
 define( 'WP_VISITORFLOW_PLUGIN_URL', trailingslashit( plugins_url(  'wp-visitorflow' ) ) );
 
-// Set default timezone
-if ( get_option('timezone_string') ) {
-	date_default_timezone_set( get_option('timezone_string') );
-}
-
 // Check required PHP version
 if ( ! version_compare( phpversion(), WP_VISITORFLOW_REQUIRED_PHP_VERSION, ">=" ) ) {
 	// Warning message in admin area
