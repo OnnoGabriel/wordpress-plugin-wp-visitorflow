@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: wp-vsitorflow\n"
-"POT-Creation-Date: 2019-09-22 15:13+0200\n"
-"PO-Revision-Date: 2019-09-22 15:13+0200\n"
+"POT-Creation-Date: 2020-02-09 10:41+0100\n"
+"PO-Revision-Date: 2020-02-09 10:41+0100\n"
 "Last-Translator: Onno <contact@datacodedesign.de>\n"
 "Language-Team: Onno\n"
 "Language: de_DE\n"
@@ -113,7 +113,8 @@ msgstr "Sie haben keine Berechtigung zum Aufrufen dieser Seite."
 
 #: includes/classes/class-wp-visitorflow-admin-export.php:41
 #: includes/classes/class-wp-visitorflow-admin-export.php:57
-#: includes/classes/class-wp-visitorflow-admin.php:89
+#: includes/classes/class-wp-visitorflow-admin.php:107
+#: includes/classes/class-wp-visitorflow-admin.php:108
 #: includes/views/export/table.php:169
 msgid "Data Export"
 msgstr "Datenexport"
@@ -148,8 +149,8 @@ msgstr ""
 "section</a>."
 
 #: includes/classes/class-wp-visitorflow-admin-overview.php:53
-msgid "Rate us"
-msgstr "Bewerten mit"
+msgid "Rate WP Visitorflow"
+msgstr "Bewerte WP VisitorFlow "
 
 #: includes/classes/class-wp-visitorflow-admin-overview.php:56
 msgid "Support"
@@ -180,7 +181,7 @@ msgid "Excluded Page Views"
 msgstr "Ausgeschlossene Seitenaufrufe"
 
 #: includes/classes/class-wp-visitorflow-admin-overview.php:95
-#: includes/views/settings/maintenance.php:416
+#: includes/views/settings/maintenance.php:430
 msgid "Database Summary"
 msgstr "Zusammenfassung der Aufzeichnungen"
 
@@ -284,8 +285,8 @@ msgid "Last Visit"
 msgstr "Letzter Besuch"
 
 #: includes/classes/class-wp-visitorflow-admin-overview.php:369
-#: includes/classes/class-wp-visitorflow-admin.php:138
-#: includes/classes/class-wp-visitorflow-admin.php:154
+#: includes/classes/class-wp-visitorflow-admin.php:170
+#: includes/classes/class-wp-visitorflow-admin.php:186
 #: includes/views/analysis/website-pages.php:103
 #: includes/views/analysis/website-referrers.php:96
 #: includes/views/analysis/website-referrers.php:346
@@ -332,12 +333,12 @@ msgid "Overview"
 msgstr "Überblick"
 
 #: includes/classes/class-wp-visitorflow-admin-page.php:105
-#: includes/classes/class-wp-visitorflow-admin.php:87
+#: includes/classes/class-wp-visitorflow-admin.php:90
 msgid "Full Website"
 msgstr "Ganze Webpräsenz"
 
 #: includes/classes/class-wp-visitorflow-admin-page.php:106
-#: includes/classes/class-wp-visitorflow-admin.php:88
+#: includes/classes/class-wp-visitorflow-admin.php:99
 msgid "Single Page"
 msgstr "Einzelne Webseite"
 
@@ -374,8 +375,9 @@ msgid "Logfile"
 msgstr "Logdatei"
 
 #: includes/classes/class-wp-visitorflow-admin-settings.php:61
-#: includes/classes/class-wp-visitorflow-admin.php:90
-#: includes/classes/class-wp-visitorflow-admin.php:120
+#: includes/classes/class-wp-visitorflow-admin.php:116
+#: includes/classes/class-wp-visitorflow-admin.php:117
+#: includes/classes/class-wp-visitorflow-admin.php:152
 msgid "Settings"
 msgstr "Einstellungen"
 
@@ -470,32 +472,32 @@ msgstr ""
 "Detailierte Webanalyse und Visualisierung des Besucherflusses auf dieser "
 "Webpräsenz."
 
-#: includes/classes/class-wp-visitorflow-admin.php:87
+#: includes/classes/class-wp-visitorflow-admin.php:89
 msgid "Full Website Analytics"
 msgstr "Analyse der ganzen Webpräsenz"
 
-#: includes/classes/class-wp-visitorflow-admin.php:88
+#: includes/classes/class-wp-visitorflow-admin.php:98
 msgid "Single Page Analytics"
 msgstr "Analyse einzelner Seiten"
 
-#: includes/classes/class-wp-visitorflow-admin.php:132
-#: includes/classes/class-wp-visitorflow-admin.php:148
+#: includes/classes/class-wp-visitorflow-admin.php:164
+#: includes/classes/class-wp-visitorflow-admin.php:180
 msgid "WP VisitorFlow"
 msgstr "WP VisitorFlow"
 
-#: includes/classes/class-wp-visitorflow-admin.php:168
+#: includes/classes/class-wp-visitorflow-admin.php:200
 msgid "months"
 msgstr "Monate"
 
-#: includes/classes/class-wp-visitorflow-admin.php:170
+#: includes/classes/class-wp-visitorflow-admin.php:202
 msgid "days"
 msgstr "Tagen"
 
-#: includes/classes/class-wp-visitorflow-admin.php:172
+#: includes/classes/class-wp-visitorflow-admin.php:204
 msgid "hours"
 msgstr "Stunden"
 
-#: includes/classes/class-wp-visitorflow-admin.php:174
+#: includes/classes/class-wp-visitorflow-admin.php:206
 msgid "minutes"
 msgstr "Minuten"
 
@@ -2109,11 +2111,14 @@ msgstr ""
 msgid "HTTP User-Agent String"
 msgstr "HTTP-User-Agent-String"
 
-#: wp-visitorflow.php:141
+#: wp-visitorflow.php:136
 msgid ""
 "An error occurred during installation/update of the WP VisitorFlow plugin."
 msgstr ""
 "An error occurred during installation/update of the WP VisitorFlow plugin."
+
+#~ msgid "Rate us"
+#~ msgstr "Bewerten mit"
 
 #~ msgid "First record date"
 #~ msgstr "Erste Aufzeichnung am"

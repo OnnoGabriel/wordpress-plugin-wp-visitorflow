@@ -50,7 +50,7 @@ class WP_VisitorFlow_Admin_Overview
 	?>
 		<div style="text-align:right;">
 			<a href="//wordpress.org/support/view/plugin-reviews/wp-visitorflow" target="_blank" class="add-new-h2">
-				<?php echo __('Rate us', 'wp-visitorflow'); ?> &#9733;&#9733;&#9733;&#9733;&#9733;
+				<?php echo __('Rate WP Visitorflow', 'wp-visitorflow'); ?> &#9733;&#9733;&#9733;&#9733;&#9733;
 			</a>
 			<a href="//wordpress.org/support/plugin/wp-visitorflow" target="_blank" class="add-new-h2">
 				<?php echo __('Support', 'wp-visitorflow'); ?>
