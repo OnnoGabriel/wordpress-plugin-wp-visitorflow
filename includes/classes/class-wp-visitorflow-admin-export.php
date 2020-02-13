@@ -55,38 +55,11 @@ class WP_VisitorFlow_Admin_Export
 				<img src="<?php echo plugin_dir_url( __FILE__ ) . '../../assets/images/Logo_250.png'; ?>" align="left" width="80" height="80" alt="Logo" />
 			</div>
 			<h1>WP VisitorFlow &ndash; <?php echo __('Data Export', 'wp-visitorflow') ?></h1>
-			<p><?php echo __('Export recorded data to csv tables or to the WP VisitorFlow app.', 'wp-visitorflow'); ?></p>
+			<p><?php echo __('Export recorded data to CSV.', 'wp-visitorflow'); ?></p>
 			<div style="clear:both;"></div>
 	<?php
 
-		// Print Tab Menu
-	?>
-			<div style="clear:both;"></div>
-			<nav class="nav-tab-wrapper">
-	<?php
-			foreach ($admin_tabs as $tab => $props) {
-				if (current_user_can($props['min_role']) ) {
-					if ($exportPage->get_current_tab() == $tab){
-						$class = ' nav-tab-active';
-					}
-					else {
-						$class = '';
-					}
-					echo '<a class="nav-tab'.$class.'" href="?page=wpvf_admin_export&amp;tab=' . $tab . '">'.$props['title'].'</a>';
-				}
-			}
-	?>
-			</nav>
-			<div style="clear:both;"></div>
-	<?php
-
-
-		if ($exportPage->get_current_tab() == 'table') {
-			include_once WP_VISITORFLOW_PLUGIN_PATH . 'includes/views/export/table.php';
-		}
-		elseif ($exportPage->get_current_tab() == 'app') {
-			include_once WP_VISITORFLOW_PLUGIN_PATH . 'includes/views/export/app.php';
-		}
+		include_once WP_VISITORFLOW_PLUGIN_PATH . 'includes/views/export/table.php';
 
 
 	}

@@ -2,9 +2,9 @@
   "name": "wp-visitorflow",
   "author": "Onno Gabriel",
   "scripts": {
-    "test": "phpunit --color",
+    "test": "./phpunit --color",
     "test:watch": "watch 'npm run --silent test' .",
-    "test:coverage": "phpunit --color --coverage-html ../../code-coverage/wp-visitorflow"
+    "test:coverage": "./phpunit --color --coverage-html ../../code-coverage/wp-visitorflow"
   },
   "devDependencies": {
     "watch": "^1.0.2"

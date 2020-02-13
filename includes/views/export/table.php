@@ -165,10 +165,6 @@
 
 ?>
 	<div class="wpvf-background">
-
-		<h3><?php _e('Data Export', 'wp-visitorflow'); ?></h3>
-
-		<br />
 		<?php echo  __('Data export for the recorded page view statistics as a CSV raw data table.', 'wp-visitorflow'); ?><br />
 		<br />
 		<?php echo  __('Select year and month for data export:', 'wp-visitorflow'); ?>
@@ -186,14 +182,14 @@
 		<br />
 		<h4><?php echo  __('Result', 'wp-visitorflow'); ?>:</h4>
 		<a href="<?php echo $zip_fileurl; ?>"><?php echo  __('Download ZIP File', 'wp-visitorflow'); ?></a>
-		(<?php echo number_format_i18n( filesize($zip_filepath)/1024 ); ?> kB)<br />
+		(<?php echo number_format_i18n( filesize($zip_filepath)/1024 + 0.5 ); ?> kB)<br />
 <?php
 	}
 	if ($export_fileurl) {
 ?>
 		<br />
 		<a href="<?php echo $export_fileurl; ?>"><?php echo __('Download CSV File', 'wp-visitorflow'); ?></a>
-		(<?php echo number_format_i18n( filesize($export_filepath)/1024 ); ?> kB)<br />
+		(<?php echo number_format_i18n( filesize($export_filepath)/1024 + 0.5 ); ?> kB)<br />
 <?php
 	}
 
