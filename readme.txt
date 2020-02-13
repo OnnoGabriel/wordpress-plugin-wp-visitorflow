@@ -5,7 +5,7 @@ Tags: statistics, analytics, web analytics, stats, visits, visitors, page, page 
 Requires at least: 3.5
 Requires PHP: 5.5
 Tested up to:  5.3.2
-Stable tag: 1.6.0
+Stable tag: 1.6.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -94,7 +94,7 @@ WP VisitorFlow stores the statistics data in two different ways: the "flow data"
 
 == Changelog ==
 
-= 1.6.0 =
+= 1.6.1 =
 * Update device detector
 * Data export to Android app discontinued; data export via CSV export still available
 
@@ -195,7 +195,7 @@ WP VisitorFlow stores the statistics data in two different ways: the "flow data"
 * First published version.
 
 == Upgrade Notice ==
-= 1.6.0 =
+= 1.6.1 =
 Update device detector; data export to Android app discontinued.
 
 = 1.5.9 =
