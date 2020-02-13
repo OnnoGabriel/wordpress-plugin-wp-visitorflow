@@ -91,9 +91,13 @@ WP VisitorFlow stores the statistics data in two different ways: the "flow data"
 2. The overview page provides a summary of the recent number of visitors and page views.
 3. Distribution of web browsers and operation systems used by remote clients.
 4. Typical timeline of referrers, i.e. number of visitors coming from various search engines.
-5. Android app available: see a summary of website visits for one or more WordPress installations on your Android mobile phone or tablet.
 
 == Changelog ==
+
+= 1.6.0 =
+* Update device detector
+* Data export to Android app discontinued; data export via CSV export still available
+
 = 1.5.9 =
 * Fixes an issue with timezones related to WordPress 5.3
 
@@ -191,23 +195,26 @@ WP VisitorFlow stores the statistics data in two different ways: the "flow data"
 * First published version.
 
 == Upgrade Notice ==
+= 1.6.0 =
+Update device detector; data export to Android app discontinued.
+
 = 1.5.9 =
-* Fixes an issue with timezones related to WordPress 5.3
+Fixes an issue with timezones related to WordPress 5.3
 
 = 1.5.8 =
-* Bugfix after breaking change in add_submenu_page() WordPress 5.3 function
+Bugfix after breaking change in add_submenu_page() WordPress 5.3 function
 
 = 1.5.7 =
-* Updated device detector database, some text and translation updates
+Updated device detector database, some text and translation updates
 
 = 1.5.6 =
-* Update device detector
+Update device detector
 
 = 1.5.5 =
-* WordPress 5.0 ready, Bugfix links on pages and posts list
+WordPress 5.0 ready, Bugfix links on pages and posts list
 
 = 1.5.4 =
-* Bugfix 404 pages
+Bugfix 404 pages
 
 = 1.5.2 =
 Some minor bugfixes
