@@ -15,8 +15,8 @@
 
 	$counters = array(
 		array(
-			'label' => __('Visitors', 'wp_visitorflow'),
-			'label_period' => __('last 24h', 'wp_visitorflow'),
+			'label' => __('Visitors', 'wp-visitorflow'),
+			'label_period' => __('last 24h', 'wp-visitorflow'),
 			'db_info_column' => 'visits_24h_count',
 			'db_info_compare' => 'visits_24h_before',
 			'db_info_average' => 'visits_count',
@@ -24,8 +24,8 @@
 			'color' => 'blue'
 		),
 		array(
-			'label' => __('Visitors', 'wp_visitorflow'),
-			'label_period' => __('last 7 days', 'wp_visitorflow'),
+			'label' => __('Visitors', 'wp-visitorflow'),
+			'label_period' => __('last 7 days', 'wp-visitorflow'),
 			'db_info_column' => 'visits_7d_count',
 			'db_info_compare' => 'visits_7d_before',
 			'db_info_average' => 'visits_count',
@@ -33,8 +33,8 @@
 			'color' => 'darkblue'
 		),
 		array(
-			'label' => __('Page views', 'wp_visitorflow'),
-			'label_period' => __('last 24h', 'wp_visitorflow'),
+			'label' => __('Page views', 'wp-visitorflow'),
+			'label_period' => __('last 24h', 'wp-visitorflow'),
 			'db_info_column' => 'hits_24h_count',
 			'db_info_compare' => 'hits_24h_before',
 			'db_info_average' => 'hits_count',
@@ -42,8 +42,8 @@
 			'color' => 'pink'
 		),
 		array(
-			'label' => __('Page views', 'wp_visitorflow'),
-			'label_period' => __('last 7 days', 'wp_visitorflow'),
+			'label' => __('Page views', 'wp-visitorflow'),
+			'label_period' => __('last 7 days', 'wp-visitorflow'),
 			'db_info_column' => 'hits_7d_count',
 			'db_info_compare' => 'hits_7d_before',
 			'db_info_average' => 'hits_count',
@@ -81,7 +81,7 @@
 						$arrow = ($i+1) . 'm';
 					}
 				}
-				$arrow_html = '<img class="' . $arrow_class . '" src="' . WP_VISITORFLOW_PLUGIN_URL . 'assets/images/Arrow-' . $arrow . '.png" alt="arrow" />';
+				$arrow_html = '<img class="' . $arrow_class . '" src="' . wp-visitorflow_PLUGIN_URL . 'assets/images/Arrow-' . $arrow . '.png" alt="arrow" />';
 				$average = $db_info[ $counter['db_info_average'] ] * $counter['hours'] / ($db_info['db_minutes_run'] / 60);
 				$average_html = '(&#216; ' . round($average) . ')';
 			}
@@ -102,15 +102,15 @@
 		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-3" style="padding:0;">
 			<div class="wpvf_info wpvf_info_green<?php echo $info_box_class; ?>">
 				<span class="<?php echo $title_class; ?>"><?php echo  str_replace(" ", "&nbsp;", WP_VisitorFlow_Admin::getNiceTimeDifference( self::$config->getSetting('db-startdatetime'), self::$config->getDatetime() ) ); ?></span><br>
-				<?php echo __('since the first record on', 'wp_visitorflow'); ?><br>
+				<?php echo __('since the first record on', 'wp-visitorflow'); ?><br>
 				<?php echo date_i18n( get_option( 'date_format' ), strtotime(self::$config->getSetting('db-startdatetime'))); ?>
 			</div>
 		</div>
 		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-3" style="padding:0;">
 			<div class="wpvf_info wpvf_info_darkred<?php echo $info_box_class; ?>">
 				<span class="<?php echo $title_class; ?>"><?php echo number_format_i18n($db_info['bots_count']); ?></span><br>
-				<?php echo __('Recorded bots visits', 'wp_visitorflow'); ?><br>
-				&#216; <?php echo sprintf( __('%s per day', 'wp_visitorflow'),
+				<?php echo __('Recorded bots visits', 'wp-visitorflow'); ?><br>
+				&#216; <?php echo sprintf( __('%s per day', 'wp-visitorflow'),
 				number_format_i18n($db_info['bots_count'] * $db_info['counters_perdayfactor']) ); ?>
 			</div>
 		</div>
