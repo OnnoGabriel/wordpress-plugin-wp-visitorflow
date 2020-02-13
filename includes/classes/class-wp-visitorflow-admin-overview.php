@@ -67,7 +67,7 @@ class WP_VisitorFlow_Admin_Overview
 	public static function overviewMetaboxes() {
 
 		$current_screen = get_current_screen();
-		switch ( $current_screen->id) {
+		switch ( $current_screen->id ) {
 			case 'toplevel_page_wpvf_menu':
 				self::content();
 				break;
@@ -90,9 +90,9 @@ class WP_VisitorFlow_Admin_Overview
 		add_meta_box('shortsummary',  		__('Short Summary', 'wp-visitorflow'),   								array('WP_VisitorFlow_Admin_Overview', 'summary'), 				get_current_screen(), 'normal','high');
 		add_meta_box('lastmonthplot', 		__('Page Views and Visits within the Last 30 Days', 'wp-visitorflow'),	array('WP_VisitorFlow_Admin_Overview', 'lastMonthPlot'), 		get_current_screen(), 'normal','high');
 		add_meta_box('latestkeywords',		__('Latest Search Keys Words', 'wp-visitorflow'), 						array('WP_VisitorFlow_Admin_Overview', 'latestKeywords'), 		get_current_screen(), 'normal','low');
-		add_meta_box('botcounts', 			__('Recorded Bot Visits', 'wp-visitorflow'), 							array('WP_VisitorFlow_Admin_Overview', 'botCounts'), 			get_current_screen(), 'side','high');
-		add_meta_box('exclusioncounts', 	__('Excluded Page Views', 'wp-visitorflow'), 							array('WP_VisitorFlow_Admin_Overview', 'exclusionCounts'), 		get_current_screen(), 'side','low');
-		add_meta_box('dbinfo',				__('Database Summary', 'wp-visitorflow'), 								array('WP_VisitorFlow_Admin_Overview', 'dbInfo'), 				get_current_screen(), 'side','low');
+		add_meta_box('botcounts', 			__('Recorded Bot Visits', 'wp-visitorflow'), 							array('WP_VisitorFlow_Admin_Overview', 'botCounts'), 			get_current_screen(), 'normal','high');
+		add_meta_box('exclusioncounts', 	__('Excluded Page Views', 'wp-visitorflow'), 							array('WP_VisitorFlow_Admin_Overview', 'exclusionCounts'), 		get_current_screen(), 'normal','low');
+		add_meta_box('dbinfo',				__('Database Summary', 'wp-visitorflow'), 								array('WP_VisitorFlow_Admin_Overview', 'dbInfo'), 				get_current_screen(), 'normal','low');
 		add_meta_box('mostfrequentpages', 	__('Most Visited Pages within the last 7 Days', 'wp-visitorflow'), 		array('WP_VisitorFlow_Admin_Overview', 'mostFrequentPages'),	get_current_screen(), 'normal','low');
 		add_meta_box('latestuastrings', 	__('Latest HTTP User-Agent Strings', 'wp-visitorflow'), 				array('WP_VisitorFlow_Admin_Overview', 'latestUaStrings'), 		get_current_screen(), 'normal','low');
 

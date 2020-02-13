@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: wp-vsitorflow\n"
-"POT-Creation-Date: 2020-02-09 10:41+0100\n"
-"PO-Revision-Date: 2020-02-09 10:41+0100\n"
+"POT-Creation-Date: 2020-02-13 15:04+0100\n"
+"PO-Revision-Date: 2020-02-13 15:04+0100\n"
 "Last-Translator: Onno <contact@datacodedesign.de>\n"
 "Language-Team: Onno\n"
 "Language: de_DE\n"
@@ -56,7 +56,7 @@ msgstr "Alle Daten"
 #: includes/classes/class-wp-list-table-wpvf.php:578
 #, php-format
 msgid "%1$s %2$d"
-msgstr ""
+msgstr "%1$s %2$d"
 
 #: includes/classes/class-wp-list-table-wpvf.php:637
 #: includes/classes/class-wp-list-table-wpvf.php:649
@@ -99,8 +99,7 @@ msgstr "Alle auswählen"
 #: includes/classes/class-wp-visitorflow-admin-settings.php:37
 #: includes/classes/class-wp-visitorflow-admin-single.php:40
 #: includes/classes/class-wp-visitorflow-admin-website.php:44
-#: includes/views/export/app.php:3 includes/views/export/table.php:4
-#: includes/views/settings/logfile.php:3
+#: includes/views/export/table.php:4 includes/views/settings/logfile.php:3
 #: includes/views/settings/maintenance.php:3
 #: includes/views/settings/privacy.php:3 includes/views/settings/storage.php:3
 #: includes/views/tables/table-bots.php:3
@@ -115,7 +114,6 @@ msgstr "Sie haben keine Berechtigung zum Aufrufen dieser Seite."
 #: includes/classes/class-wp-visitorflow-admin-export.php:57
 #: includes/classes/class-wp-visitorflow-admin.php:107
 #: includes/classes/class-wp-visitorflow-admin.php:108
-#: includes/views/export/table.php:169
 msgid "Data Export"
 msgstr "Datenexport"
 
@@ -124,9 +122,8 @@ msgid "App"
 msgstr "App"
 
 #: includes/classes/class-wp-visitorflow-admin-export.php:58
-msgid "Export recorded data to csv tables or to the WP VisitorFlow app."
+msgid "Export recorded data to CSV."
 msgstr ""
-"Aufgezeichnete Daten als CSV-Datei oder zur WP VisitorFlow-App exportieren"
 
 #: includes/classes/class-wp-visitorflow-admin-overview.php:39
 msgid "No data yet."
@@ -143,14 +140,13 @@ msgid ""
 "class=\"wpvf\" href=\"?page=wpvf_admin_settings&tab=storing\">settings "
 "section</a>."
 msgstr ""
-"By default, no visits are recorded originating from admin pages or from "
-"administrators visiting your website. You can change this settings in the <a "
-"class=\"wpvf\" href=\"?page=wpvf_admin_settings&tab=storing\">settings "
-"section</a>."
+"Standardmäßig werden keine Seitenbesuche aufgezeichnet, die durch "
+"Administration durchgeführt werden. Du kann dies in den <a class=\"wpvf\" "
+"href=\"?page=wpvf_admin_settings&tab=storing\">Einstellungen </a> ändern."
 
 #: includes/classes/class-wp-visitorflow-admin-overview.php:53
 msgid "Rate WP Visitorflow"
-msgstr "Bewerte WP VisitorFlow "
+msgstr "Bewerte WP Visitorflow"
 
 #: includes/classes/class-wp-visitorflow-admin-overview.php:56
 msgid "Support"
@@ -275,7 +271,7 @@ msgstr "Seitenaufrufe"
 
 #: includes/classes/class-wp-visitorflow-admin-overview.php:338
 #: includes/views/analysis/website-pages.php:220
-#: includes/views/tables/table-exclusions.php:113
+#: includes/views/tables/table-exclusions.php:106
 msgid "Page"
 msgstr "Seite"
 
@@ -285,8 +281,8 @@ msgid "Last Visit"
 msgstr "Letzter Besuch"
 
 #: includes/classes/class-wp-visitorflow-admin-overview.php:369
-#: includes/classes/class-wp-visitorflow-admin.php:170
-#: includes/classes/class-wp-visitorflow-admin.php:186
+#: includes/classes/class-wp-visitorflow-admin.php:173
+#: includes/classes/class-wp-visitorflow-admin.php:189
 #: includes/views/analysis/website-pages.php:103
 #: includes/views/analysis/website-referrers.php:96
 #: includes/views/analysis/website-referrers.php:346
@@ -302,10 +298,10 @@ msgstr "Fluss"
 #: includes/views/tables/table-bots.php:26
 #: includes/views/tables/table-dbinfo.php:24
 #: includes/views/tables/table-dbinfo.php:40
-#: includes/views/tables/table-exclusions.php:45
-#: includes/views/tables/table-exclusions.php:100
-#: includes/views/tables/table-exclusions.php:138
-#: includes/views/tables/table-exclusions.php:164
+#: includes/views/tables/table-exclusions.php:44
+#: includes/views/tables/table-exclusions.php:94
+#: includes/views/tables/table-exclusions.php:127
+#: includes/views/tables/table-exclusions.php:147
 #: includes/views/tables/table-keywords.php:50
 #: includes/views/tables/table-uastrings.php:55
 #, php-format
@@ -377,7 +373,7 @@ msgstr "Logdatei"
 #: includes/classes/class-wp-visitorflow-admin-settings.php:61
 #: includes/classes/class-wp-visitorflow-admin.php:116
 #: includes/classes/class-wp-visitorflow-admin.php:117
-#: includes/classes/class-wp-visitorflow-admin.php:152
+#: includes/classes/class-wp-visitorflow-admin.php:155
 msgid "Settings"
 msgstr "Einstellungen"
 
@@ -480,24 +476,24 @@ msgstr "Analyse der ganzen Webpräsenz"
 msgid "Single Page Analytics"
 msgstr "Analyse einzelner Seiten"
 
-#: includes/classes/class-wp-visitorflow-admin.php:164
-#: includes/classes/class-wp-visitorflow-admin.php:180
+#: includes/classes/class-wp-visitorflow-admin.php:167
+#: includes/classes/class-wp-visitorflow-admin.php:183
 msgid "WP VisitorFlow"
 msgstr "WP VisitorFlow"
 
-#: includes/classes/class-wp-visitorflow-admin.php:200
+#: includes/classes/class-wp-visitorflow-admin.php:203
 msgid "months"
 msgstr "Monate"
 
-#: includes/classes/class-wp-visitorflow-admin.php:202
+#: includes/classes/class-wp-visitorflow-admin.php:205
 msgid "days"
 msgstr "Tagen"
 
-#: includes/classes/class-wp-visitorflow-admin.php:204
+#: includes/classes/class-wp-visitorflow-admin.php:207
 msgid "hours"
 msgstr "Stunden"
 
-#: includes/classes/class-wp-visitorflow-admin.php:206
+#: includes/classes/class-wp-visitorflow-admin.php:209
 msgid "minutes"
 msgstr "Minuten"
 
@@ -642,7 +638,6 @@ msgstr "Absprungrate"
 
 #: includes/views/analysis/flow-per-page.php:506
 #: includes/views/analysis/flow-per-step.php:943
-#: includes/views/export/app.php:274
 msgid "seconds"
 msgstr "Sekunden"
 
@@ -773,7 +768,7 @@ msgstr "Absprungrate"
 
 #: includes/views/analysis/flow-per-step.php:789
 msgid " (in %)"
-msgstr "(in %)"
+msgstr " (in %)"
 
 #: includes/views/analysis/flow-per-step.php:938
 msgid "click"
@@ -893,7 +888,7 @@ msgid "Yes, delete it!"
 msgstr "Ja, löschen!"
 
 #: includes/views/analysis/website-visitors.php:67
-#: includes/views/export/app.php:57 includes/views/settings/maintenance.php:32
+#: includes/views/settings/maintenance.php:32
 #: includes/views/settings/maintenance.php:79
 #: includes/views/settings/maintenance.php:171
 #: includes/views/settings/maintenance.php:197
@@ -979,206 +974,8 @@ msgid "Count"
 msgstr "Anzahl"
 
 #: includes/views/analysis/website-visitors.php:343
-#: includes/views/export/app.php:140
 msgid "Action"
 msgstr "Aktion"
-
-#: includes/views/export/app.php:15
-msgid "Not available."
-msgstr "Nicht verfügbar."
-
-#: includes/views/export/app.php:16
-msgid "WordPress version 4.7 or higher required to use this functionality."
-msgstr ""
-"Um diese Funktion nutzen zu können, ist WordPress in einer Version ab 4.7 "
-"notwendig,"
-
-#: includes/views/export/app.php:50
-msgid "Do you really want to remove the access from this device?"
-msgstr "Soll diesem Gerät wirklich der Zugang gesperrt werden?"
-
-#: includes/views/export/app.php:54
-msgid "Yes, remove it!"
-msgstr "Ja, los!"
-
-#: includes/views/export/app.php:73
-msgid "Device access removed."
-msgstr "Geräte-Zugang entfernt."
-
-#: includes/views/export/app.php:80 includes/views/export/app.php:120
-msgid "Access from Mobile App"
-msgstr "Zugang durch die mobile App"
-
-#: includes/views/export/app.php:90
-msgid "Enable App Access"
-msgstr "App-Zugang freigeben"
-
-#: includes/views/export/app.php:93 includes/views/settings/privacy.php:61
-#: includes/views/settings/privacy.php:89
-#: includes/views/settings/storage.php:134
-#: includes/views/settings/storage.php:145
-#: includes/views/settings/storage.php:195
-#: includes/views/settings/storage.php:204
-#: includes/views/settings/storage.php:242
-#: includes/views/settings/storage.php:286
-#, php-format
-msgid "Active (default: %s)"
-msgstr "aktiv (voreingestellt: %s)"
-
-#: includes/views/export/app.php:93 includes/views/settings/privacy.php:61
-#: includes/views/settings/privacy.php:89
-#: includes/views/settings/storage.php:134
-#: includes/views/settings/storage.php:145
-#: includes/views/settings/storage.php:195
-#: includes/views/settings/storage.php:204
-#: includes/views/settings/storage.php:242
-#: includes/views/settings/storage.php:286
-msgid "active"
-msgstr "aktiv"
-
-#: includes/views/export/app.php:93 includes/views/settings/privacy.php:61
-#: includes/views/settings/privacy.php:89
-#: includes/views/settings/storage.php:134
-#: includes/views/settings/storage.php:145
-#: includes/views/settings/storage.php:195
-#: includes/views/settings/storage.php:204
-#: includes/views/settings/storage.php:242
-#: includes/views/settings/storage.php:286
-msgid "inactive"
-msgstr "inaktiv"
-
-#: includes/views/export/app.php:94
-msgid ""
-"Enabling access to WP VisitorFlow data from the mobile WordPress VisitorFlow "
-"app (Android only)."
-msgstr ""
-"Zugang zu den WP-VisitorFlow-Daten durch die mobile App \"WordPress "
-"VisitorFlow\" freigeben (nur für Android verfügbar)."
-
-#: includes/views/export/app.php:99
-msgid "Hint"
-msgstr "Hinweis"
-
-#: includes/views/export/app.php:99
-msgid ""
-"Access from the mobile app to this website will be included into the "
-"recorded statistics."
-msgstr ""
-"Anfragen durch die mobile App können auch in die Webseiten-Statistiken "
-"eingehen."
-
-#: includes/views/export/app.php:100
-msgid ""
-"To prevent this, just include the string \"/index.php/wp-json/wp-visitorflow"
-"\" to the <a class=\"wpvf\" href=\"?page=wpvf_admin_settings&tab=storing"
-"\">pages URL exclusion list</a>."
-msgstr ""
-"Um dies zu verhindern, einfach die Zeichenkette  \"/index.php/wp-json/wp-"
-"visitorflow\" zur  <a class=\"wpvf\" href=\"?"
-"page=wpvf_admin_settings&tab=storing\">Seiten-URL-Auschlussliste</a> "
-"hinzufügen."
-
-#: includes/views/export/app.php:124
-msgid "Remote Clients"
-msgstr "Mobile Geräte"
-
-#: includes/views/export/app.php:130
-msgid ""
-"Remote client(s) with access to WP VisitorFlow statistics on this website:"
-msgstr ""
-"Alle mobilen Geräte mit Zugang zu den WP VisitorFlow-Statistiken auf dieser "
-"Webseite:"
-
-#: includes/views/export/app.php:133
-msgid "No."
-msgstr "Nr."
-
-#: includes/views/export/app.php:134
-msgid "Registered since"
-msgstr "Registriert am"
-
-#: includes/views/export/app.php:135
-msgid "Manufacturer"
-msgstr "Hersteller"
-
-#: includes/views/export/app.php:136
-msgid "Model"
-msgstr "Modell"
-
-#: includes/views/export/app.php:137
-msgid "Platform"
-msgstr "Betriebssystem-Platform"
-
-#: includes/views/export/app.php:138
-msgid "Version"
-msgstr "Betriebssystems-Version"
-
-#: includes/views/export/app.php:139
-msgid "Device UUID"
-msgstr "Geräte-UUID"
-
-#: includes/views/export/app.php:163
-msgid "Remove access"
-msgstr "Zugang entfernen"
-
-#: includes/views/export/app.php:175
-msgid "No remote client with access yet."
-msgstr "Bisher hat kein Gerät Zugang."
-
-#: includes/views/export/app.php:209
-msgid "Scan this code"
-msgstr "Diesen Code scannen"
-
-#: includes/views/export/app.php:220
-msgid "How to:"
-msgstr "Wie funktioniert das?"
-
-#: includes/views/export/app.php:223
-msgid "How to receive this website's statistics on your mobile device:"
-msgstr ""
-"So können die WP VisitorFlow-Daten auf einem mobilen Gerät betrachtet werden:"
-
-#: includes/views/export/app.php:226
-msgid ""
-"Download and install the Android app \"WP VisitorFlow\" on your mobile "
-"device."
-msgstr ""
-"Die Android-App \"WP VisitorFlow\" herunterladen und auf dem mobilen Gerät "
-"installieren."
-
-#: includes/views/export/app.php:233
-msgid ""
-"Generate a code containing this website's URL and an access token for the "
-"mobile app:"
-msgstr ""
-"Einen Code generieren, der die URL dieser Webseite sowie einen Zugangscode "
-"für die App enthält:"
-
-#: includes/views/export/app.php:238
-msgid "Generate Code"
-msgstr "Code generieren"
-
-#: includes/views/export/app.php:242
-msgid "You can also enter this code manually:"
-msgstr "Dieser Code kann alternativ auch per Hand eingegeben werden:"
-
-#: includes/views/export/app.php:247
-msgid "Website's URL"
-msgstr "Webseiten-URL"
-
-#: includes/views/export/app.php:248
-msgid "Token"
-msgstr "Zugangscode"
-
-#: includes/views/export/app.php:262
-msgid "In app: Add access to this website by scanning the generated code."
-msgstr ""
-"In der App: Durch das Einscannen dieses Codes den Zugang zu dieser Webseite "
-"freigeben."
-
-#: includes/views/export/app.php:274
-msgid "This code is valid for "
-msgstr "Dieser Code ist noch gültig für "
 
 #: includes/views/export/table.php:20 includes/views/export/table.php:27
 #: includes/views/export/table.php:34
@@ -1208,32 +1005,32 @@ msgstr "Beitrag/Seiten-Titel"
 msgid "Cannot write file %s."
 msgstr "Kann Datei %s nicht schreiben."
 
-#: includes/views/export/table.php:172
+#: includes/views/export/table.php:168
 msgid ""
 "Data export for the recorded page view statistics as a CSV raw data table."
 msgstr "Datenexport der gespeicherten Seitenaufrufe als CSV-Rohdaten-Datei."
 
-#: includes/views/export/table.php:174
+#: includes/views/export/table.php:170
 msgid "Select year and month for data export:"
 msgstr "Jahr und Monat für den Datenexport auswählen:"
 
-#: includes/views/export/table.php:177
+#: includes/views/export/table.php:173
 msgid "Create data table"
 msgstr "Daten-Tabelle generieren"
 
-#: includes/views/export/table.php:179
+#: includes/views/export/table.php:175
 msgid "Format \"YYYY-MM\" for older browsers"
 msgstr "Format \"YYYY-MM\", falls ein älterer Browser verwendet wird"
 
-#: includes/views/export/table.php:187
+#: includes/views/export/table.php:183
 msgid "Result"
 msgstr "Ergebnis"
 
-#: includes/views/export/table.php:188
+#: includes/views/export/table.php:184
 msgid "Download ZIP File"
 msgstr "Download als ZIP-Datei"
 
-#: includes/views/export/table.php:195
+#: includes/views/export/table.php:191
 msgid "Download CSV File"
 msgstr "Download als CSV-Datei"
 
@@ -1493,6 +1290,40 @@ msgstr "IP-Adressen"
 msgid "Anonymize IP addresses"
 msgstr "IP-Adressen anonymisieren"
 
+#: includes/views/settings/privacy.php:61
+#: includes/views/settings/privacy.php:89
+#: includes/views/settings/storage.php:134
+#: includes/views/settings/storage.php:145
+#: includes/views/settings/storage.php:195
+#: includes/views/settings/storage.php:204
+#: includes/views/settings/storage.php:242
+#: includes/views/settings/storage.php:286
+#, php-format
+msgid "Active (default: %s)"
+msgstr "aktiv (voreingestellt: %s)"
+
+#: includes/views/settings/privacy.php:61
+#: includes/views/settings/privacy.php:89
+#: includes/views/settings/storage.php:134
+#: includes/views/settings/storage.php:145
+#: includes/views/settings/storage.php:195
+#: includes/views/settings/storage.php:204
+#: includes/views/settings/storage.php:242
+#: includes/views/settings/storage.php:286
+msgid "active"
+msgstr "aktiv"
+
+#: includes/views/settings/privacy.php:61
+#: includes/views/settings/privacy.php:89
+#: includes/views/settings/storage.php:134
+#: includes/views/settings/storage.php:145
+#: includes/views/settings/storage.php:195
+#: includes/views/settings/storage.php:204
+#: includes/views/settings/storage.php:242
+#: includes/views/settings/storage.php:286
+msgid "inactive"
+msgstr "inaktiv"
+
 #: includes/views/settings/privacy.php:63
 msgid "Anonymize IP addresses of remote clients by encryption."
 msgstr "Anonymisiere die IP-Adresse von Endgeräten durch Verschlüsselung."
@@ -1751,7 +1582,7 @@ msgstr ""
 "enthalten, werden von der Statistik ausgeschlossen."
 
 #: includes/views/settings/storage.php:273
-#: includes/views/settings/storage.php:371
+#: includes/views/settings/storage.php:376
 msgid "Exclude WordPress Users"
 msgstr "WordPress-User ausschließen"
 
@@ -1825,15 +1656,16 @@ msgstr ""
 msgid "How long is the data recorded?"
 msgstr "Wie lange werden die Daten gespeichert?"
 
-#: includes/views/settings/storage.php:334
+#: includes/views/settings/storage.php:336
+#, php-format
 msgid ""
-"The detailed visitor and flow data is stored for 365 days by default (can be "
+"The detailed visitor and flow data is stored for %d days by default (can be "
 "changed in Settings/Storage)."
 msgstr ""
-"Detaillierte Besucherflussdaten werden für 365 Tage gespeichert (einstellbar "
+"Detaillierte Besucherflussdaten werden für %d Tage gespeichert (einstellbar "
 "in Einstellungen/Erfassung)."
 
-#: includes/views/settings/storage.php:335
+#: includes/views/settings/storage.php:340
 msgid ""
 "Older data is automatically deleted and only information about total visits "
 "per page and day is kept in the database for an infinite amount of time."
@@ -1842,24 +1674,24 @@ msgstr ""
 "Aufrufe aller Seiten pro Tag ermittelt werden. Diese aggregierten Daten "
 "bleiben unbeschränkt gespeichert."
 
-#: includes/views/settings/storage.php:339
+#: includes/views/settings/storage.php:344
 msgid "Trouble with caching plugins?"
 msgstr "Probleme mit Caching-Plugins?"
 
-#: includes/views/settings/storage.php:341
+#: includes/views/settings/storage.php:346
 msgid ""
 "Visitors and page views are automatically recorded in the WordPress backend "
 "(by default)."
 msgstr ""
 "Besucher und Seitenaufrufe werden standardmäßig im WordPress-Backend erfasst."
 
-#: includes/views/settings/storage.php:342
+#: includes/views/settings/storage.php:347
 msgid "However, we found that some caching plugins circumvent this recording."
 msgstr ""
 "Allerdings haben wir feststellen müssen, dass bestimmte Caching-Plugins "
 "diesen Mechanismus umgehen."
 
-#: includes/views/settings/storage.php:343
+#: includes/views/settings/storage.php:348
 msgid ""
 "If you use such a cache, you should enable \"Enable client JS requests\" in "
 "Settings/Storage."
@@ -1868,7 +1700,7 @@ msgstr ""
 "Einstellung \"JS-Zugriff auf Clientseite aktivieren\" in Einstellungen/"
 "Erfassung."
 
-#: includes/views/settings/storage.php:344
+#: includes/views/settings/storage.php:349
 msgid ""
 "Thereby, a small JavaScript function is added to your website, which "
 "triggers the data recording by WP VisitorFlow."
@@ -1877,27 +1709,27 @@ msgstr ""
 "die Erfassung des Seitenbesuchs durch WP VisitorFlow auch bei Einsatz von "
 "Caching-Plugins ermöglicht."
 
-#: includes/views/settings/storage.php:348
+#: includes/views/settings/storage.php:353
 msgid "Exclude visitors and page views"
 msgstr "Besucher und Seitenaufrufe ausschließen"
 
-#: includes/views/settings/storage.php:350
+#: includes/views/settings/storage.php:355
 msgid "Detected bots"
 msgstr "Erkannte Bots"
 
-#: includes/views/settings/storage.php:351
+#: includes/views/settings/storage.php:356
 msgid "Many page views originate from automated bots and crawlers."
 msgstr ""
 "Viele Seitenaufrufe werden durch automatische Bots und Crawlern, zum "
 "Beispiel von Suchmaschinen, durchgeführt."
 
-#: includes/views/settings/storage.php:352
+#: includes/views/settings/storage.php:357
 msgid "By default, these bots are excluded from the flow data statistics."
 msgstr ""
 "Standardmäßig werden diese Besuche von der Besucherfluss-Statistik "
 "ausgeschlossen."
 
-#: includes/views/settings/storage.php:353
+#: includes/views/settings/storage.php:358
 msgid ""
 "They are detected by their submitted HTTP user agent-strings and only the "
 "total number of page views are counted."
@@ -1905,11 +1737,11 @@ msgstr ""
 "Sie werden durch ihre übermittelten HTTP-User-Agent-Strings erkannt und nur "
 "die Gesamtzahl ihrer Seitenaufrufe gezählt."
 
-#: includes/views/settings/storage.php:356
+#: includes/views/settings/storage.php:361
 msgid "Unknown UA strings"
 msgstr "Unbekannte UA-Strings"
 
-#: includes/views/settings/storage.php:357
+#: includes/views/settings/storage.php:362
 msgid ""
 "If the submitted user-agent string is unknown, the visits are counted but "
 "excluded from the flow data statistics (by default)."
@@ -1917,7 +1749,7 @@ msgstr ""
 "Wenn ein übermittelter User-Agent-String unbekannt ist, wird der Besuch "
 "gezählt, aber standardmäßig nicht der Besucherfluss erfasst."
 
-#: includes/views/settings/storage.php:358
+#: includes/views/settings/storage.php:363
 msgid ""
 "Moreover, certain UA strings can be detected by means of a white-list and "
 "excluded from the flow data statistics, too"
@@ -1925,17 +1757,17 @@ msgstr ""
 "Desweiteren können bestimmte UA-Strings mit Hilfe einer selbst definierten "
 "Liste ausgeschlossen werden."
 
-#: includes/views/settings/storage.php:361
+#: includes/views/settings/storage.php:366
 msgid "404 error pages"
 msgstr "404-Fehlerseiten"
 
-#: includes/views/settings/storage.php:362
+#: includes/views/settings/storage.php:367
 msgid "If a requested page is not available, WordPress delivers a 404 error. "
 msgstr ""
 "Wenn eine aufgerufene Webseite nicht vorhanden ist, liefert WordPress eine "
 "404-Fehlerseite aus."
 
-#: includes/views/settings/storage.php:363
+#: includes/views/settings/storage.php:368
 msgid ""
 "By default, these not existing pages are included in the flow statistics, "
 "because often you want to see these errors."
@@ -1943,16 +1775,16 @@ msgstr ""
 "Standardmäßig werden nicht-existierende Webseiten im Besucherfluss erfasst, "
 "da diese Informationen für die meisten Seitenbetreiber interessant sind."
 
-#: includes/views/settings/storage.php:364
+#: includes/views/settings/storage.php:369
 msgid "However, you can deactivate the recording of 404 pages."
 msgstr ""
 "Natürlich kann diese Erfassung von 404-Fehlerseiten auch deaktiviert werden."
 
-#: includes/views/settings/storage.php:367
+#: includes/views/settings/storage.php:372
 msgid "URL exclusion list"
 msgstr "URL-Ausschluss-Liste"
 
-#: includes/views/settings/storage.php:368
+#: includes/views/settings/storage.php:373
 msgid ""
 "If you want to exclude certain pages from the statistics, you can use a "
 "white-list."
@@ -1960,7 +1792,7 @@ msgstr ""
 "Falls Sie bestimme Seiten von der Besucherfluss-Statistik ausschließen "
 "wollen, können Sie diese in eine Liste eintragen."
 
-#: includes/views/settings/storage.php:372
+#: includes/views/settings/storage.php:377
 msgid ""
 "By default, any page view of logged-in WordPress user is not recorded. You "
 "can set the recording of any logged-in WordPress user per role."
@@ -1969,31 +1801,31 @@ msgstr ""
 "erfasst. In den Einstellungen kann die Erfassung von Seitenaufrufen von "
 "angemeldeten Users je nach Rolle aktiviert werden."
 
-#: includes/views/tables/table-bots.php:46
+#: includes/views/tables/table-bots.php:48
 msgid "Bot/Crawler Name"
 msgstr "Bot-/Crawler-Name"
 
-#: includes/views/tables/table-bots.php:47
+#: includes/views/tables/table-bots.php:49
 msgid "Hits"
 msgstr "Aufrufe"
 
-#: includes/views/tables/table-bots.php:48
+#: includes/views/tables/table-bots.php:50
 msgid "Hits per Day"
 msgstr "Aufrufe pro Tag"
 
-#: includes/views/tables/table-bots.php:49
+#: includes/views/tables/table-bots.php:51
 msgid "Last Hit"
 msgstr "Letzter Aufruf"
 
-#: includes/views/tables/table-bots.php:53
-#: includes/views/tables/table-exclusions.php:184
+#: includes/views/tables/table-bots.php:55
+#: includes/views/tables/table-exclusions.php:161
 #: includes/views/tables/table-keywords.php:78
 #: includes/views/tables/table-uastrings.php:68
 msgid "Table still empty."
 msgstr "Tabelle noch leer."
 
-#: includes/views/tables/table-bots.php:102
-#: includes/views/tables/table-exclusions.php:191
+#: includes/views/tables/table-bots.php:89
+#: includes/views/tables/table-exclusions.php:168
 msgid "Show all"
 msgstr "Zeige alles"
 
@@ -2006,14 +1838,10 @@ msgid "Value"
 msgstr "Wert"
 
 #: includes/views/tables/table-dbinfo.php:15
-#, fuzzy
-#| msgid "since the first record on"
 msgid "Date of first record"
-msgstr "seit der ersten Aufzeichnung am"
+msgstr "Erste Aufzeichnung am"
 
 #: includes/views/tables/table-dbinfo.php:33
-#, fuzzy
-#| msgid "First flow data date"
 msgid "Date pf first flow data"
 msgstr "Start der Besucherflussdaten"
 
@@ -2033,10 +1861,8 @@ msgid "Number of page views"
 msgstr "Anzahl der Seitenaufrufe"
 
 #: includes/views/tables/table-dbinfo.php:68
-#, fuzzy
-#| msgid "Recorded bots visits"
 msgid "Recorded bot visits"
-msgstr "Aufgezeichnete Bot-Besuche"
+msgstr "aufgezeichnete Bot-Besuche"
 
 #: includes/views/tables/table-dbinfo.php:77
 msgid "Excluded page views"
@@ -2066,11 +1892,11 @@ msgstr "Seitenaufrufe pro Tag"
 msgid "Last View"
 msgstr "Letzter Aufruf"
 
-#: includes/views/tables/table-exclusions.php:148
+#: includes/views/tables/table-exclusions.php:131
 msgid "404 errors"
 msgstr "404-Fehlerseiten"
 
-#: includes/views/tables/table-exclusions.php:174
+#: includes/views/tables/table-exclusions.php:151
 msgid "Self-referrers"
 msgstr "Eigenaufruf"
 
@@ -2116,6 +1942,141 @@ msgid ""
 "An error occurred during installation/update of the WP VisitorFlow plugin."
 msgstr ""
 "An error occurred during installation/update of the WP VisitorFlow plugin."
+
+#~ msgid "Export recorded data to csv tables or to the WP VisitorFlow app."
+#~ msgstr ""
+#~ "Aufgezeichnete Daten als CSV-Datei oder zur WP VisitorFlow-App exportieren"
+
+#~ msgid "Not available."
+#~ msgstr "Nicht verfügbar."
+
+#~ msgid "WordPress version 4.7 or higher required to use this functionality."
+#~ msgstr ""
+#~ "Um diese Funktion nutzen zu können, ist WordPress in einer Version ab 4.7 "
+#~ "notwendig,"
+
+#~ msgid "Do you really want to remove the access from this device?"
+#~ msgstr "Soll diesem Gerät wirklich der Zugang gesperrt werden?"
+
+#~ msgid "Yes, remove it!"
+#~ msgstr "Ja, los!"
+
+#~ msgid "Device access removed."
+#~ msgstr "Geräte-Zugang entfernt."
+
+#~ msgid "Access from Mobile App"
+#~ msgstr "Zugang durch die mobile App"
+
+#~ msgid "Enable App Access"
+#~ msgstr "App-Zugang freigeben"
+
+#~ msgid ""
+#~ "Enabling access to WP VisitorFlow data from the mobile WordPress "
+#~ "VisitorFlow app (Android only)."
+#~ msgstr ""
+#~ "Zugang zu den WP-VisitorFlow-Daten durch die mobile App \"WordPress "
+#~ "VisitorFlow\" freigeben (nur für Android verfügbar)."
+
+#~ msgid "Hint"
+#~ msgstr "Hinweis"
+
+#~ msgid ""
+#~ "Access from the mobile app to this website will be included into the "
+#~ "recorded statistics."
+#~ msgstr ""
+#~ "Anfragen durch die mobile App können auch in die Webseiten-Statistiken "
+#~ "eingehen."
+
+#~ msgid ""
+#~ "To prevent this, just include the string \"/index.php/wp-json/wp-"
+#~ "visitorflow\" to the <a class=\"wpvf\" href=\"?"
+#~ "page=wpvf_admin_settings&tab=storing\">pages URL exclusion list</a>."
+#~ msgstr ""
+#~ "Um dies zu verhindern, einfach die Zeichenkette  \"/index.php/wp-json/wp-"
+#~ "visitorflow\" zur  <a class=\"wpvf\" href=\"?"
+#~ "page=wpvf_admin_settings&tab=storing\">Seiten-URL-Auschlussliste</a> "
+#~ "hinzufügen."
+
+#~ msgid "Remote Clients"
+#~ msgstr "Mobile Geräte"
+
+#~ msgid ""
+#~ "Remote client(s) with access to WP VisitorFlow statistics on this website:"
+#~ msgstr ""
+#~ "Alle mobilen Geräte mit Zugang zu den WP VisitorFlow-Statistiken auf "
+#~ "dieser Webseite:"
+
+#~ msgid "No."
+#~ msgstr "Nr."
+
+#~ msgid "Registered since"
+#~ msgstr "Registriert am"
+
+#~ msgid "Manufacturer"
+#~ msgstr "Hersteller"
+
+#~ msgid "Model"
+#~ msgstr "Modell"
+
+#~ msgid "Platform"
+#~ msgstr "Betriebssystem-Platform"
+
+#~ msgid "Version"
+#~ msgstr "Betriebssystems-Version"
+
+#~ msgid "Device UUID"
+#~ msgstr "Geräte-UUID"
+
+#~ msgid "Remove access"
+#~ msgstr "Zugang entfernen"
+
+#~ msgid "No remote client with access yet."
+#~ msgstr "Bisher hat kein Gerät Zugang."
+
+#~ msgid "Scan this code"
+#~ msgstr "Diesen Code scannen"
+
+#~ msgid "How to:"
+#~ msgstr "Wie funktioniert das?"
+
+#~ msgid "How to receive this website's statistics on your mobile device:"
+#~ msgstr ""
+#~ "So können die WP VisitorFlow-Daten auf einem mobilen Gerät betrachtet "
+#~ "werden:"
+
+#~ msgid ""
+#~ "Download and install the Android app \"WP VisitorFlow\" on your mobile "
+#~ "device."
+#~ msgstr ""
+#~ "Die Android-App \"WP VisitorFlow\" herunterladen und auf dem mobilen "
+#~ "Gerät installieren."
+
+#~ msgid ""
+#~ "Generate a code containing this website's URL and an access token for the "
+#~ "mobile app:"
+#~ msgstr ""
+#~ "Einen Code generieren, der die URL dieser Webseite sowie einen "
+#~ "Zugangscode für die App enthält:"
+
+#~ msgid "Generate Code"
+#~ msgstr "Code generieren"
+
+#~ msgid "You can also enter this code manually:"
+#~ msgstr "Dieser Code kann alternativ auch per Hand eingegeben werden:"
+
+#~ msgid "Website's URL"
+#~ msgstr "Webseiten-URL"
+
+#~ msgid "Token"
+#~ msgstr "Zugangscode"
+
+#~ msgid "In app: Add access to this website by scanning the generated code."
+#~ msgstr ""
+#~ "In der App: Durch das Einscannen dieses Codes den Zugang zu dieser "
+#~ "Webseite freigeben."
+
+#~ msgid "This code is valid for "
+#~ msgstr "Dieser Code ist noch gültig für "
 
 #~ msgid "Rate us"
 #~ msgstr "Bewerten mit"

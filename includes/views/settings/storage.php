@@ -331,13 +331,12 @@
 
 							<h3><?php _e('How long is the data recorded?', 'wp-visitorflow'); ?></h3>
 							<p>
-								<?php _e(
-											sprintf(
-												'The detailed visitor and flow data is stored for %d days by default (can be changed in Settings/Storage).',
-												self::$config->getDefaultSettings('flowdata_storage_time')
-											),
-											'wp-visitorflow'
-										); ?>
+								<?php
+									echo sprintf(
+										__('The detailed visitor and flow data is stored for %d days by default (can be changed in Settings/Storage).', 'wp-visitorflow'),
+										self::$config->getDefaultSettings('flowdata_storage_time')
+									);
+								?>
 								<?php _e('Older data is automatically deleted and only information about total visits per page and day is kept in the database for an infinite amount of time.', 'wp-visitorflow'); ?>
 							</p>
 							<br>

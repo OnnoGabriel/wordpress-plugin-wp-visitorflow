@@ -94,7 +94,7 @@ class WP_VisitorFlow_Admin_Page_Metabox extends WP_VisitorFlow_Admin_Page
 		do_action('add_meta_boxes', $this->screen, null);
 
 		/* User can choose between 1 or 2 columns (default 2) */
-		add_screen_option('layout_columns', array('max' => 2, 'default' => 2) );
+		add_screen_option('layout_columns', array('max' => 2, 'default' => 1) );
 
 		/* Enqueue WordPress' script for handling the metaboxes */
 		wp_enqueue_script('postbox');

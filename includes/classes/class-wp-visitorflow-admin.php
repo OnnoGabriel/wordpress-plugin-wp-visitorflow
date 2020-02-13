@@ -122,7 +122,7 @@ class WP_VisitorFlow_Admin
 		);
 
 		// Enqueue css file2
-		wp_enqueue_style('wpvf', WP_VISITORFLOW_PLUGIN_URL  . 'assets/css/wp_visitorflow.css');
+		wp_enqueue_style('wpvf', WP_VISITORFLOW_PLUGIN_URL  . 'assets/css/wp_visitorflow.min.css');
 		wp_enqueue_style('wpvf-bootstrap-grid', WP_VISITORFLOW_PLUGIN_URL  . 'assets/css/bootstrap_grid12.min.css');
 
 		// Enqueue js
