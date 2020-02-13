@@ -295,6 +295,15 @@ table.wpvftable tr.right, td.right {
 	text-align:right;
 }
 
+table.wpvftable tr.hidden_excluded {
+	display: none;
+}
+
+table.wpvftable tr.hidden_bots {
+	display: none;
+}
+
+
 /*-----------------------------------------------------------------
   - WPVF TimeFrame-Menu
   -----------------------------------------------------------------*/

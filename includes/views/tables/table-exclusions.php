@@ -27,7 +27,6 @@
 
 	$table_empty = true;
 	$some_hidden = false;
-	$count = 1;
 	foreach ($exclude_strings as $exclude_string) {
 
 		$result = $db->get_row(
@@ -46,35 +45,30 @@
 				WP_VisitorFlow_Admin::getNiceTimeDifference($result->datetime, self::$config->getDatetime() )
 			);
 		}
-		if ($value > 0 || array_key_exists('wpvf_exclusions_showall', $_GET)) {
+		if ($value > 0) {
 			$table_empty = false;
-			if ($count % 2 != 0) {
-				echo '<tr>';
-			}
-			else {
-				echo '<tr class="darker">';
-			}
-			$count++;
-			if ($exclude_string == 'unknown') {
-				echo '<td><em>UA string</em>: empty/unknown</td>';
-			}
-			else {
-				echo '<td><em>UA string</em>: ' . $exclude_string . '</td>';
-			}
-			if ($value > 0) {
-				echo '<td class="right"><strong>' . $value . '</strong></td>';
-				echo '<td class="right">' . sprintf("%3.1f", $value * $db_info['perdayfactor']) . '</td>';
-			}
-			else {
-				echo '<td class="right">' . $value . '</td>';
-				echo '<td class="right">&minus;</td>';
-			}
-			echo '<td>' . $datetime . '</td>';
-			echo '</tr>';
+			echo '<tr>';
 		}
 		else {
 			$some_hidden = true;
+			echo '<tr class="hidden_excluded">';
 		}
+		if ($exclude_string == 'unknown') {
+			echo '<td><em>UA string</em>: empty/unknown</td>';
+		}
+		else {
+			echo '<td><em>UA string</em>: ' . $exclude_string . '</td>';
+		}
+		if ($value > 0) {
+			echo '<td class="right"><strong>' . $value . '</strong></td>';
+			echo '<td class="right">' . sprintf("%3.1f", $value * $db_info['perdayfactor']) . '</td>';
+		}
+		else {
+			echo '<td class="right">' . $value . '</td>';
+			echo '<td class="right">&minus;</td>';
+		}
+		echo '<td>' . $datetime . '</td>';
+		echo '</tr>';
 	}
 
 	// Exclusions due to Page String:
@@ -101,30 +95,25 @@
 				WP_VisitorFlow_Admin::getNiceTimeDifference($result->datetime, self::$config->getDatetime() )
 			);
 		}
-		if ($value > 0 || array_key_exists('wpvf_exclusions_showall', $_GET)) {
+		if ($value > 0) {
 			$table_empty = false;
-			if ($count % 2 != 0) {
-				echo '<tr>';
-			}
-			else {
-				echo '<tr class="darker">';
-			}
-			$count++;
-			echo '<td><em>' . __('Page', 'wp-visitorflow') . '</em>: ' . $exclude_string . '</td>';
-			if ($value > 0) {
-				echo '<td class="right"><strong>' . number_format_i18n($value) . '</strong></td>';
-				echo '<td class="right">' . sprintf("%3.1f", $value * $db_info['counters_perdayfactor']) . '</td>';
-			}
-			else {
-				echo '<td class="right">' . number_format_i18n($value) . '</td>';
-				echo '<td class="right">&minus;</td>';
-			}
-			echo '<td>' . $datetime . '</td>';
-			echo '</tr>';
+			echo '<tr>';
 		}
 		else {
 			$some_hidden = true;
+			echo '<tr class="hidden_excluded">';
 		}
+		echo '<td><em>' . __('Page', 'wp-visitorflow') . '</em>: ' . $exclude_string . '</td>';
+		if ($value > 0) {
+			echo '<td class="right"><strong>' . number_format_i18n($value) . '</strong></td>';
+			echo '<td class="right">' . sprintf("%3.1f", $value * $db_info['counters_perdayfactor']) . '</td>';
+		}
+		else {
+			echo '<td class="right">' . number_format_i18n($value) . '</td>';
+			echo '<td class="right">&minus;</td>';
+		}
+		echo '<td>' . $datetime . '</td>';
+		echo '</tr>';
 	}
 
 	// Exclusions due 404 errors?
@@ -138,13 +127,7 @@
 				__( '%s ago', 'wp-visitorflow'),
 				WP_VisitorFlow_Admin::getNiceTimeDifference($result->datetime, self::$config->getDatetime() )
 			);
-			if ($count % 2 != 0) {
-				echo '<tr>';
-			}
-			else {
-				echo '<tr class="darker">';
-			}
-			$count++;
+			echo '<tr>';
 			echo '<td><em>' . __('404 errors', 'wp-visitorflow') . '</em></td>';
 			echo '<td class="right"><strong>' . number_format_i18n($result->value) . '</strong></td>';
 			echo '<td class="right">' . sprintf("%3.1f", $result->value * $db_info['perdayfactor']) . '</td>';
@@ -164,13 +147,7 @@
 				__( '%s ago', 'wp-visitorflow'),
 				WP_VisitorFlow_Admin::getNiceTimeDifference($result->datetime, self::$config->getDatetime() )
 			);
-			if ($count % 2 != 0) {
-				echo '<tr>';
-			}
-			else {
-				echo '<tr class="darker">';
-			}
-			$count++;
+			echo '<tr>';
 			echo '<td><em>' . __('Self-referrers', 'wp-visitorflow') . '</em></td>';
 			echo '<td class="right"><strong>' . number_format_i18n($result->value) . '</strong></td>';
 			echo '<td class="right">' . sprintf("%3.1f", $result->value * $db_info['perdayfactor']) . '</td>';
@@ -188,6 +165,6 @@
 
 	if ($some_hidden) {
 ?>
-		<a class="wpvf" href="?page=wpvf_menu&amp;wpvf_exclusions_showall=1">[ <?php echo  __('Show all', 'wp-visitorflow'); ?> ]</a>
+		<a id="wpvf_show_excluded" class="wpvf" href="#">[ <?php echo  __('Show all', 'wp-visitorflow'); ?> ]</a>
 <?php
 	}

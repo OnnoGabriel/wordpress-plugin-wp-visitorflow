@@ -121,9 +121,12 @@ class WP_VisitorFlow_Admin
 			4
 		);
 
-		// Enqueue css file
-		wp_enqueue_style('wpvf', WP_VISITORFLOW_PLUGIN_URL  . 'assets/css/wp_visitorflow.min.css');
+		// Enqueue css file2
+		wp_enqueue_style('wpvf', WP_VISITORFLOW_PLUGIN_URL  . 'assets/css/wp_visitorflow.css');
 		wp_enqueue_style('wpvf-bootstrap-grid', WP_VISITORFLOW_PLUGIN_URL  . 'assets/css/bootstrap_grid12.min.css');
+
+		// Enqueue js
+		wp_enqueue_script('wpvf', WP_VISITORFLOW_PLUGIN_URL  . 'assets/js/wp-visitorflow.js', ['jquery'], null, true);
 	}
 
 

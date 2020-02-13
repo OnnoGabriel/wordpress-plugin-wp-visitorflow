@@ -31,14 +31,16 @@
 			array_push($botcounts_values, $value);
 		}
 
-		$bot = array('name' => $result->label,
-						'datetime' => $datetime,
-						'hitsperday' => sprintf("%3.1f", $value * $db_info['counters_perdayfactor']),
-						'hits' => $value);
+		$bot = array(
+			'name' => $result->label,
+			'datetime' => $datetime,
+			'hitsperday' => sprintf("%3.1f", $value * $db_info['counters_perdayfactor']),
+			'hits' => $value
+		);
 		array_push($botcounts, $bot);
 	}
 
-	$threshold_index = 0;
+	$some_hidden = false;
 
 ?>
 	<table class="wpvftable">
@@ -55,22 +57,6 @@
 	else {
 		$botcounts_filtered = $botcounts;
 
-		// If not "show all" selected: truncate bot list to maximum 10 entries
-		if (! array_key_exists('wpvf_botlist_showall', $_GET)) {
-			sort($botcounts_values);
-			$threshold = 0;
-			while (count($botcounts_filtered) > 10) {
-				$threshold_index++;
-				$threshold = $botcounts_values[$threshold_index];
-				$botcounts_filtered = array();
-				foreach ($botcounts as $bot) {
-					if ($bot['hits'] >= $threshold) {
-						array_push($botcounts_filtered, $bot);
-					}
-				}
-			}
-		}
-
 		// Sort bot array descending by hits
 		$sort_col = array();
 		foreach ($botcounts_filtered as $key => $row) {
@@ -79,11 +65,12 @@
 		array_multisort($sort_col, SORT_DESC, $botcounts_filtered);
 		$count = 1;
 		foreach ($botcounts_filtered as $bot) {
-			if ($count % 2 != 0) {
+			if ($count <= 10) {
 				echo '<tr>';
 			}
 			else {
-				echo '<tr class="darker">';
+				$some_hidden = true;
+				echo '<tr class="hidden_bots">';
 			}
 			$count++;
 			echo '<td>' . $bot['name'] . '</td>';
@@ -97,8 +84,8 @@
 	</table>
 <?php
 
-	if ($threshold_index) {
+	if ($some_hidden) {
 ?>
-		<a class="wpvf" href="?page=wpvf_menu&amp;wpvf_botlist_showall=1">[ <?php echo  __('Show all', 'wp-visitorflow'); ?> ]</a>
+		<a id="wpvf_show_botcounts" class="wpvf" href="#">[ <?php echo  __('Show all', 'wp-visitorflow'); ?> ]</a>
 <?php
 	}
