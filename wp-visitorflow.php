@@ -191,13 +191,12 @@ register_uninstall_hook(
 );
 
 // REST API
-add_action( 'rest_api_init', 'wp_visitorflow_register_rest_routes' );
-function wp_visitorflow_register_rest_routes() {
-	$wpvfConfig = WP_VisitorFlow_Config::getInstance();
-	if ( $wpvfConfig->getSetting('enable_app_access') == true
-	  && version_compare( get_bloginfo('version'), '4.7', '>=' ) ) {
-		include_once WP_VISITORFLOW_PLUGIN_PATH . 'includes/functions/wp-visitorflow-rest-api.php';
-	}
-
-}
+// add_action( 'rest_api_init', 'wp_visitorflow_register_rest_routes' );
+// function wp_visitorflow_register_rest_routes() {
+// 	$wpvfConfig = WP_VisitorFlow_Config::getInstance();
+// 	if ( $wpvfConfig->getSetting('enable_app_access') == true
+// 	  && version_compare( get_bloginfo('version'), '4.7', '>=' ) ) {
+// 		include_once WP_VISITORFLOW_PLUGIN_PATH . 'includes/functions/wp-visitorflow-rest-api.php';
+// 	}
+// }
 

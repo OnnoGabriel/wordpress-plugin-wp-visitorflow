@@ -99,7 +99,6 @@ class WP_VisitorFlow_Config
 			'last_dbclean_date' => 0,
 			'last_aggregation_date' => 0,
 			'data_aggregation_running' => false,
-			'enable_app_access' => false,
 			'app_granted_tokens' => array(),
 			'app_token_length' => 32
 		);
