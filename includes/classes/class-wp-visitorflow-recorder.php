@@ -269,9 +269,11 @@ class WP_VisitorFlow_Recorder
 		$dd = new DeviceDetector( $ua_string) ;
 
 		// Use a cache to increase performance
-		$cache_folder = WP_CONTENT_DIR . '/extensions/wp-visitorflow/cache/';
+		$cache = new \Doctrine\Common\Cache\ApcuCache();
 		if (file_exists( $cache_folder ) ) {
-			$dd->setCache( new Doctrine\Common\Cache\PhpFileCache( $cache_folder ) );
+			$dd->setCache(
+				new \DeviceDetector\Cache\DoctrineBridge($cache)
+			);
 		}
 
 		// Parse the UA String

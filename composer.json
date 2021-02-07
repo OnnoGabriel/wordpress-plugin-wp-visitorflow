@@ -1,6 +1,6 @@
 {
   "require": {
-    "piwik/device-detector": "3.12.3",
+    "matomo/device-detector": "4.1.0",
     "doctrine/cache": "1.6.2"
   }
 }
